@@ -1,0 +1,51 @@
+# Navigation
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias desktop='cd ~/Desktop'
+alias downloads='cd ~/Downloads'
+alias documents='cd ~/Documents'
+alias code='cd ~/Code'
+
+# Shortcuts
+alias compress='tar -zcvf'
+alias extract='tar -zxvf'
+alias p='ping 8.8.8.8'
+alias s='sudo'
+alias v='vim'
+alias px='ps aux'
+alias mysqlc='mysql -u root -p'
+alias mysqldumpc='mysqldump -u root -p'
+alias myip='curl ip.appspot.com'
+alias fn='find -name'
+alias fs='stat -f "%z bytes"'
+
+# Defaults
+alias rm='rm -v'
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
+# GIT
+alias g='git'
+alias master='git checkout master'
+alias push='git push origin HEAD'
+alias fetch='git fetch -p'
+alias pull='git pull --rebase --prune --verbose --no-ff --no-commit --no-stat'
+alias forcepush='git push --force origin HEAD'
+alias undopush='git push -f origin HEAD^:master'
+alias amend='git commit --amend --no-edit'
+alias ga='git add'
+alias gc='git commit -m'
+alias gp='git push origin master'
+alias gs='git status -s'
+alias gd='git diff'
+alias gds='git diff --staged'
+alias gl='git log --graph --abbrev-commit --pretty=oneline -n 20'
+alias gh='git log -p'
+
+# PHP
+alias art='php artisan'
+alias pdoc='/usr/bin/phpdoc -d ./ -t ./docs -i "docs/*,vendor/*"'
+alias pdbg='/usr/bin/php -dxdebug.remote_enable=1 -dxdebug.remote_mode=req -dxdebug.remote_port=9000 -dxdebug.remote_host=127.0.0.1 -dxdebug.collect_vars=1 -dxdebug.show_local_vars=1 -dxdebug.remote_connect_back=1 -dxdebug.remote_autostart=1 -dxdebug.remote_idekey=DBGKEY'

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="xfce4-panel" version="1.0">
+  <property name="configver" type="int" value="2"/>
+  <property name="panels" type="array">
+    <value type="int" value="1"/>
+    <property name="panel-1" type="empty">
+      <property name="position" type="string" value="p=8;x=960;y=1058"/>
+      <property name="length" type="uint" value="100"/>
+      <property name="position-locked" type="bool" value="true"/>
+      <property name="size" type="uint" value="23"/>
+      <property name="plugin-ids" type="array">
+        <value type="int" value="13"/>
+        <value type="int" value="18"/>
+        <value type="int" value="1"/>
+        <value type="int" value="14"/>
+        <value type="int" value="15"/>
+        <value type="int" value="28"/>
+        <value type="int" value="6"/>
+        <value type="int" value="12"/>
+        <value type="int" value="9"/>
+        <value type="int" value="25"/>
+        <value type="int" value="19"/>
+        <value type="int" value="5"/>
+        <value type="int" value="23"/>
+      </property>
+      <property name="mode" type="uint" value="0"/>
+      <property name="disable-struts" type="bool" value="false"/>
+      <property name="output-name" type="string" value=""/>
+      <property name="nrows" type="uint" value="1"/>
+      <property name="background-style" type="uint" value="0"/>
+      <property name="background-color" type="array">
+        <value type="uint" value="529"/>
+        <value type="uint" value="529"/>
+        <value type="uint" value="529"/>
+        <value type="uint" value="65535"/>
+      </property>
+    </property>
+  </property>
+  <property name="plugins" type="empty">
+    <property name="plugin-1" type="string" value="applicationsmenu">
+      <property name="show-menu-icons" type="bool" value="true"/>
+      <property name="show-button-title" type="bool" value="false"/>
+      <property name="show-generic-names" type="bool" value="false"/>
+      <property name="custom-menu" type="bool" value="false"/>
+      <property name="button-title" type="string" value=""/>
+    </property>
+    <property name="plugin-15" type="string" value="separator">
+      <property name="expand" type="bool" value="true"/>
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-5" type="string" value="clock">
+      <property name="mode" type="uint" value="2"/>
+    </property>
+    <property name="plugin-6" type="string" value="systray">
+      <property name="names-visible" type="array">
+        <value type="string" value="networkmanager applet"/>
+        <value type="string" value="ibus panel"/>
+        <value type="string" value="wicd-client.py"/>
+        <value type="string" value="network"/>
+        <value type="string" value="skype"/>
+        <value type="string" value="synapse"/>
+        <value type="string" value="mate-volume-control-applet"/>
+        <value type="string" value="slack"/>
+        <value type="string" value="telegram"/>
+      </property>
+      <property name="names-hidden" type="array">
+      </property>
+      <property name="size-max" type="uint" value="64"/>
+      <property name="show-frame" type="bool" value="true"/>
+    </property>
+    <property name="plugin-9" type="string" value="battery"/>
+    <property name="plugin-12" type="string" value="systemload"/>
+    <property name="plugin-13" type="string" value="whiskermenu"/>
+    <property name="plugin-14" type="string" value="tasklist">
+      <property name="flat-buttons" type="bool" value="true"/>
+      <property name="show-handle" type="bool" value="true"/>
+      <property name="sort-order" type="uint" value="2"/>
+      <property name="include-all-workspaces" type="bool" value="true"/>
+      <property name="show-labels" type="bool" value="true"/>
+    </property>
+    <property name="plugin-18" type="string" value="places"/>
+    <property name="plugin-19" type="string" value="datetime"/>
+    <property name="plugin-23" type="string" value="actions"/>
+    <property name="plugin-25" type="string" value="pulseaudio">
+      <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
+    </property>
+    <property name="plugin-28" type="string" value="screenshooter"/>
+  </property>
+</channel>

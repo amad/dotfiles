@@ -1,0 +1,6 @@
+[user]
+    name = Ahmad Samiei
+[color]
+    ui = true
+[core]
+    excludesfile = ~/.gitignore
