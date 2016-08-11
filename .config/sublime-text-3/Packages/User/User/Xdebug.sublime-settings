@@ -1,0 +1,6 @@
+{
+    "path_mapping": {
+        "/var/www/html/" : "/home/ahmad/sandbox/buppertestinfra/"
+    },
+    "break_on_start": false
+}

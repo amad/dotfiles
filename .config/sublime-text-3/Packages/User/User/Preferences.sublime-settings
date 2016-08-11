@@ -1,0 +1,53 @@
+{
+	"added_words":
+	[
+		"param",
+		"msisdn",
+		"params",
+		"url",
+		"shortcode",
+		"Samplatform",
+		"php",
+		"Http",
+		"zipcode",
+		"maxlength",
+		"config",
+		"bool",
+		"args"
+	],
+	"always_show_minimap_viewport": true,
+	"bold_folder_labels": true,
+	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
+	"detect_indentation": true,
+	"dictionary": "Packages/Language - English/en_US.dic",
+	"follow_symlinks": false,
+	"font_size": 10,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"CodeFormatter",
+		"Floobits",
+		"SyncedSideBar",
+		"Vintage"
+	],
+	"indent_guide_options":
+	[
+		"draw_normal",
+		"draw_active"
+	],
+	"line_padding_bottom": 8,
+	"line_padding_top": 8,
+	"overlay_scroll_bars": "enabled",
+	"rulers":
+	[
+		120,
+		80
+	],
+	"show_encoding": true,
+	"spell_check": true,
+	"tab_size": 4,
+	"theme": "Material-Theme-Darker.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_automatic_white_space": true,
+	"trim_trailing_white_space_on_save": true
+}
