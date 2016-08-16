@@ -10,7 +10,7 @@ if [[ $CODE = 0 ]]; then
     IMAGE="emblem-default"
 else
     TITLE="Oops"
-    MESSAGE="Something wrong!"
+    MESSAGE="Something wrong! (${COMMAND})"
     IMAGE="emblem-important"
 fi
 
