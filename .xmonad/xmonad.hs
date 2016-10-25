@@ -31,8 +31,9 @@ main = xmonad $ gnomeConfig {
 
 myStartupHook = do
     spawn "xfce4-panel"
-    spawn "syndaemon -i 0.8 -K -d"
+    spawn "syndaemon -i 1 -K -d"
     spawn "dropbox start"
     spawn "nm-applet &"
     spawn "synapse --startup"
     spawn "export _JAVA_AWT_WM_NONREPARENTING=1"
+    spawn "xset r rate 200 45"
