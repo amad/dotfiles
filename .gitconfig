@@ -4,3 +4,14 @@
     ui = true
 [core]
     excludesfile = ~/.gitignore
+[color "diff"]
+    commit = yellow
+    meta = magenta
+    frag = cyan
+    old = red
+    new = green
+    whitespace = red reverse
+[pager]
+    log = diff-highlight | less
+    show = diff-highlight
+    diff = diff-highlight

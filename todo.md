@@ -23,3 +23,4 @@ Install:
 
 - pip install pywatch
 - pip install maybe
+- pip install diff-highlight
