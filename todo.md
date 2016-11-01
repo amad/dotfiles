@@ -16,11 +16,10 @@ Install:
 - dconf-editor
 - synapse
 - xfce4-panel
-- xfce4-goodies xfce4-pulseaudio-plugin xfce4-volumed xfce4-mixer xfce4-mixer xfce4-settings
+- xfce4-goodies xfce4-pulseaudio-plugin xfce4-volumed xfce4-settings
 - xfce4-topmenu-plugin xfce4-screenshooter xfce4-screenshooter-plugin xfce4-power-manager xfce4-power-manager-plugins
 - wicd wicd-gtk wicd-cli feh
 - python-pip
 
-- pip install pywatch
-- pip install maybe
-- pip install diff-highlight
+- pip install pywatch lolcat maybe diff-highlight
+
