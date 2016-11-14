@@ -1,0 +1,6 @@
+[11/14/2016 05:31:04PM] INFO - ==== Loading 'Xdebug Client.sublime-package' package ====
+[11/14/2016 05:31:04PM] INFO - Failed to open /home/ahmad/.config/sublime-text-3/Packages/User/Xdebug.expressions.
+[11/14/2016 05:31:04PM] INFO - Failed to parse /home/ahmad/.config/sublime-text-3/Packages/User/Xdebug.expressions.
+[11/14/2016 05:31:44PM] WARNING - Could not import subprocess32 module, falling back to subprocess module
+[11/14/2016 05:33:26PM] INFO - scan_purelang: path: '/home/ahmad/Code/buppertestinfra/samplatform/protected/test.php' lang: PHP
+[11/14/2016 05:33:26PM] INFO - scan_purelang: path: '/home/ahmad/Code/buppertestinfra/samplatform/protected/test.php' lang: PHP
