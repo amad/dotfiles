@@ -1,5 +1,5 @@
 [user]
-	name = Ahmad Samiei
+    name = Ahmad Samiei
 [color]
     ui = true
 [core]
@@ -14,4 +14,4 @@
 [pager]
     log = diff-highlight | less
     show = diff-highlight
-    diff = diff-highlight
+    diff = diff-highlight | less
