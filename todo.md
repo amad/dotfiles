@@ -23,3 +23,4 @@ Install:
 
 - pip install pywatch lolcat maybe diff-highlight
 
+junegunn/fzf fuzzy finder
