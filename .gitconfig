@@ -13,5 +13,5 @@
     whitespace = red reverse
 [pager]
     log = diff-highlight | less
-    show = diff-highlight
+    show = diff-highlight | less
     diff = diff-highlight | less
