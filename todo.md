@@ -9,7 +9,7 @@ Install:
 - zlib1g-dev libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev libffi-dev openvpn
 - tmux sysstat htop ack-grep strace unzip
 - cowsay fortune
-- fish
+- fish grc
 - ngrok fluxgui jcal
 - vlc browser-plugin-vlc
 - xmonad
