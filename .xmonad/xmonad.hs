@@ -37,3 +37,4 @@ myStartupHook = do
     spawn "synapse --startup"
     spawn "export _JAVA_AWT_WM_NONREPARENTING=1"
     spawn "xset r rate 200 45"
+    spawn "setxkbmap -option caps:none"
