@@ -1,7 +1,2 @@
 {
-    "php_cs_fixer_executable_path": "/home/ahmad/.composer/vendor/bin/php-cs-fixer",
-    "php_cs_fixer_additional_args": {
-        "--standard": "PSR2"
-    },
-    "phpmd_run": true
 }
