@@ -19,9 +19,9 @@ Install:
 - xfce4-goodies xfce4-pulseaudio-plugin xfce4-volumed xfce4-settings
 - xfce4-topmenu-plugin xfce4-screenshooter xfce4-screenshooter-plugin xfce4-power-manager xfce4-power-manager-plugins
 - wicd wicd-gtk wicd-cli feh
-- python-pip
+- python-pip python-dev python-setuptools
 -zeal
 
-- pip install pywatch lolcat maybe diff-highlight
+- pip install pywatch lolcat maybe diff-highlight csvkit
 
 junegunn/fzf fuzzy finder
