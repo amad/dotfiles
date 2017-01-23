@@ -12,3 +12,7 @@ function nah() {
     git checkout .
     git clean -fd
 }
+
+if [ "$BASH" ]; then
+    alias fuck='sudo $(history -p \!\!)';
+fi
