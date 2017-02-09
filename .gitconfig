@@ -15,3 +15,5 @@
     log = diff-highlight | less
     show = diff-highlight | less
     diff = diff-highlight | less
+[alias]
+    yolo = !git commit -m \"$(curl -s http://whatthecommit.com/index.txt)\"
