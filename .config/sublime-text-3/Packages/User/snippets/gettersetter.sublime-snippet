@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+public function get${1/(.*)/\u$1/}()
+{
+    return \$this->${1};${0}
+}
+
+public function set${1/(.*)/\u$1/}(\$${1})
+{
+    \$this->${1} = \$${1};
+    return $this;
+}
+]]></content>
+    <tabTrigger>getset</tabTrigger>
+    <scope>source.php</scope>
+</snippet>

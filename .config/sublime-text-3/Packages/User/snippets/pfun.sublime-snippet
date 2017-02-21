@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+public function __construct(${1})
+{
+    ${0}
+}
+]]></content>
+    <tabTrigger>__cons</tabTrigger>
+    <scope>source.php</scope>
+</snippet>
