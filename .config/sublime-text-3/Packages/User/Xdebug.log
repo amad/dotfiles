@@ -1,3 +1,2 @@
-[01/08/2017 06:24:02PM] INFO - ==== Loading 'Xdebug Client.sublime-package' package ====
-[01/08/2017 06:24:02PM] INFO - Failed to open /home/ahmad/.config/sublime-text-3/Packages/User/Xdebug.expressions.
-[01/08/2017 06:24:02PM] INFO - Failed to parse /home/ahmad/.config/sublime-text-3/Packages/User/Xdebug.expressions.
+[04/07/2017 01:20:48PM] INFO - ==== Loading 'Xdebug Client.sublime-package' package ====
+[04/07/2017 01:20:50PM] WARNING - Could not import subprocess32 module, falling back to subprocess module

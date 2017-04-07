@@ -26,20 +26,20 @@
                 "standard": "PSR2"
             },
             "phplint": {
-                "@disable": true,
+                "@disable": false,
                 "args": [],
                 "excludes": []
             },
             "phpmd": {
                 "@disable": false,
-                "cmd": "phpmd",
                 "args": [],
+                "cmd": "phpmd",
                 "excludes": [],
                 "rulesets": "cleancode,codesize,controversial,design,naming,unusedcode"
             }
         },
         "mark_style": "outline",
-        "no_column_highlights_line": false,
+        "no_column_highlights_line": true,
         "passive_warnings": false,
         "paths": {
             "linux": [],

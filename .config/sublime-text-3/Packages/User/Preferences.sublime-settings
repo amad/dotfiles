@@ -13,16 +13,22 @@
 		"maxlength",
 		"config",
 		"bool",
+		"username",
+		"hostname",
 		"args"
 	],
 	"always_show_minimap_viewport": true,
 	"bold_folder_labels": true,
+	"caret_style": "phase",
 	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
+	"default_encoding": "Western (ISO-8859-1)",
 	"detect_indentation": true,
 	"dictionary": "Packages/Language - English/en_US.dic",
+	"ensure_newline_at_eof_on_save": true,
 	"follow_symlinks": false,
-	"font_size": 10,
+	"font_size": 12,
 	"highlight_line": true,
+	"hot_exit": false,
 	"ignored_packages":
 	[
 		"CodeFormatter",
@@ -33,8 +39,9 @@
 		"draw_normal",
 		"draw_active"
 	],
-	"line_padding_bottom": 8,
-	"line_padding_top": 8,
+	"line_numbers": true,
+	"line_padding_bottom": 9,
+	"line_padding_top": 9,
 	"overlay_scroll_bars": "enabled",
 	"rulers":
 	[
@@ -47,5 +54,6 @@
 	"theme": "Material-Theme-Darker.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_automatic_white_space": true,
-	"trim_trailing_white_space_on_save": true
+	"trim_trailing_white_space_on_save": true,
+	"word_wrap": false
 }

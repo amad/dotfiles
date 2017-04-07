@@ -1,6 +1,10 @@
 {
     "path_mapping": {
-        "/var/www/html/" : "/home/ahmad/sandbox/buppertestinfra/"
+        "/var/www/cms-flirt" : "/Users/ahmadsamiei/Code/webshop/php-coolblue-flirt-cms",
+        "/var/www/html/skunkworks" : "/Users/ahmadsamiei/Code/webshop/php-skunkworks"
     },
+    "ide_key": "PHPSTORM",
+    "pretty_output": true,
+    "close_on_stop": true,
     "break_on_start": false
 }

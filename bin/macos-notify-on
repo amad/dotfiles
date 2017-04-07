@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+COMMAND=$(echo $@ | sed -e 's/--/ /g')
+$@
+CODE=$?
+
+if [[ $CODE = 0 ]]; then
+    TITLE="Done"
+    MESSAGE="Looks good to me (${COMMAND})"
+    IMAGE="emblem-default"
+else
+    TITLE="Oops"
+    MESSAGE="Something wrong! (${COMMAND})"
+    IMAGE="emblem-important"
+fi
+
+osascript -e "display notification \"$MESSAGE\" with title \"$TITLE\""

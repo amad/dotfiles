@@ -18,7 +18,6 @@
 		"Function Name Display",
 		"Git",
 		"GitGutter",
-		"Inspired GitHub Color Scheme",
 		"Laravel Blade Highlighter",
 		"Locate",
 		"Material Color Scheme",
@@ -26,20 +25,15 @@
 		"OpenPath",
 		"Package Control",
 		"PHP Companion",
-		"PHP Constructors",
-		"php-snippets",
 		"PHP-Twig",
-		"phpunitkit",
 		"Pretty JSON",
 		"Quick File Creator",
-		"SFTP",
 		"SideBarEnhancements",
 		"SortBy",
 		"SublimeLinter",
 		"SublimeLinter-php",
 		"SublimeLinter-phpcs",
 		"SublimeLinter-phpmd",
-		"SublimeREPL",
 		"Xdebug Client"
 	]
 }
