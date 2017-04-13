@@ -1,0 +1,16 @@
+[escape]>[caps]
+[caps]>[escape]
+[scroll]>[shutdn]
+[kp=]>[kp=mac]
+[lalt]>[end]
+[end]>[lalt]
+[lctrl]>[delete]
+[kp-lctrl]>[kp-lwin]
+[delete]>[kp-lwin]
+[rctrl]>[rwin]
+[kp-rctrl]>[kp-rwin]
+[rwin]>[pdown]
+[kp-rwin]>[kp-rctrl]
+[pdown]>[rctrl]
+{home}>{-kp-lwin}{-lshift}{obrack}{+lshift}{+kp-lwin}
+{pup}>{-kp-lwin}{-lshift}{cbrack}{+lshift}{+kp-lwin}
