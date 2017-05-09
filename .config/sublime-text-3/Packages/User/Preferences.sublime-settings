@@ -26,12 +26,12 @@
 	"dictionary": "Packages/Language - English/en_US.dic",
 	"ensure_newline_at_eof_on_save": true,
 	"follow_symlinks": false,
-	"font_size": 12,
 	"highlight_line": true,
 	"hot_exit": false,
 	"ignored_packages":
 	[
 		"CodeFormatter",
+		"ESLint",
 		"Vintage"
 	],
 	"indent_guide_options":

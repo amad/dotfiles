@@ -116,7 +116,7 @@
 		"tooltip_theme_excludes":
 		[
 		],
-		"tooltips": true,
+		"tooltips": false,
 		"warning_color": "DDB700",
 		"wrap_find": true
 	}
