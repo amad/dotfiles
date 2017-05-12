@@ -22,7 +22,7 @@
         // default
         "Unknown error"
     ],
-    "ide_key": "PHPSTORM",
+    "ide_key": "SUBLIME",
     "pretty_output": true,
     "close_on_stop": true,
     "break_on_start": false,

@@ -27,7 +27,7 @@
 	"ensure_newline_at_eof_on_save": true,
 	"follow_symlinks": false,
 	"highlight_line": true,
-	"hot_exit": false,
+	"hot_exit": true,
 	"ignored_packages":
 	[
 		"CodeFormatter",
