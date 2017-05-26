@@ -5,6 +5,7 @@
 	],
 	"installed_packages":
 	[
+		"AceJump",
 		"AdvancedNewFile",
 		"All Autocomplete",
 		"Behat",
