@@ -28,4 +28,6 @@
     { "keys": ["super+shift+v"], "command": "paste" },
     { "keys": ["super+shift+="], "command": "reindent" },
     { "keys": ["ctrl+t"], "command": "run_phpunit_test" },
+    { "keys": ["super+f11"], "command": "sftp_upload_file" },
+    { "keys": ["super+shift+f11"], "command": "sftp_upload_open_files" },
 ]
