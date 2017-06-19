@@ -6,4 +6,9 @@
 .config/fish/fish_history
 fish/fish_history
 .DS_Store
-
+.config/sublime-text-3/Packages/User/Package Control.cache/
+.config/sublime-text-3/Packages/User/Package Control.last-run
+.config/sublime-text-3/Packages/User/Package Control.merged-ca-bundle
+.config/sublime-text-3/Packages/User/Xdebug.breakpoints
+.config/sublime-text-3/Packages/User/Xdebug.log
+.config/sublime-text-3/Packages/User/oscrypto-ca-bundle.crt
