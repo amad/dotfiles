@@ -20,7 +20,7 @@
 	"always_show_minimap_viewport": true,
 	"bold_folder_labels": true,
 	"caret_style": "phase",
-	"color_scheme": "Packages/User/SublimeLinter/Monokai (SL).tmTheme",
+	"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
 	"default_encoding": "Western (ISO-8859-1)",
 	"detect_indentation": true,
 	"dictionary": "Packages/Language - English/en_US.dic",
@@ -42,6 +42,9 @@
 	"line_numbers": true,
 	"line_padding_bottom": 9,
 	"line_padding_top": 9,
+	"material_theme_arrow_folders": true,
+	"material_theme_big_fileicons": true,
+	"material_theme_compact_sidebar": true,
 	"overlay_scroll_bars": "enabled",
 	"rulers":
 	[

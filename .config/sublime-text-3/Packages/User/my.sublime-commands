@@ -3,5 +3,10 @@
         "caption": "PHP: Insert Namespace",
         "command": "insert_namespace",
         "args": {}
+    },
+    {
+        "caption": "PHP: Find Usage",
+        "command": "find_usage",
+        "args": {}
     }
 ]
