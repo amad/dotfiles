@@ -1,0 +1,16 @@
+[
+    {
+        "button": "button1",
+        "count": 1,
+        "modifiers": ["ctrl"],
+        "press_command": "drag_select",
+        "command": "goto_definition"
+    },
+    // {
+    //   "button": "button1",
+    //   "count": 3,
+    //   "command": "find_in_project_open_result",
+    //   "press_command": "click",
+    //   "context": [{ "key": "selector", "operator": "equal", "operand": "text.findinproject" }]
+    // },
+]

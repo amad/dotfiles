@@ -15,4 +15,4 @@ class InsertNamespaceCommand(sublime_plugin.WindowCommand):
 
             namespace = parent_dir_name + "\\" + namespace
 
-        self.window.run_command("insert", {"characters": '<?php\n\nnamespace ' + namespace[:-1] + ';\n\n'})
+        self.window.run_command("insert", {"characters": 'namespace ' + namespace[:-1] + ';'})

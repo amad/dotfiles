@@ -3,11 +3,11 @@
 <?php
 declare(strict_types=1);
 
-class ${TM_FILENAME/(\w+)\.php/\1/}${2}
+trait ${TM_FILENAME/(\w+)\.php/\1/}${2}
 {
     ${0}
 }
 
 ]]></content>
-    <tabTrigger>class</tabTrigger>
+    <tabTrigger>trait</tabTrigger>
 </snippet>

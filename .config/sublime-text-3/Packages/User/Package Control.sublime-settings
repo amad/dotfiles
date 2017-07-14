@@ -19,10 +19,13 @@
 		"CodeFormatter",
 		"DocBlockr",
 		"ESLint",
+		"Find++",
 		"Function Name Display",
 		"Git",
 		"Git blame",
 		"GitGutter",
+		"Insert Nums",
+		"InsertDate",
 		"Inspired GitHub Color Scheme",
 		"Laravel Blade Highlighter",
 		"Locate",
@@ -48,6 +51,7 @@
 		"SublimeLinter-phpcs",
 		"SublimeLinter-phpmd",
 		"SublimeREPL",
+		"Trimmer",
 		"Xdebug Client"
 	]
 }

@@ -26,12 +26,14 @@
 	"dictionary": "Packages/Language - English/en_US.dic",
 	"ensure_newline_at_eof_on_save": true,
 	"follow_symlinks": false,
+	"font_size": 12,
 	"highlight_line": true,
 	"hot_exit": true,
 	"ignored_packages":
 	[
 		"CodeFormatter",
 		"ESLint",
+		"Git blame",
 		"Vintage"
 	],
 	"indent_guide_options":
@@ -40,11 +42,12 @@
 		"draw_active"
 	],
 	"line_numbers": true,
-	"line_padding_bottom": 9,
-	"line_padding_top": 9,
+	"line_padding_bottom": 4,
+	"line_padding_top": 4,
 	"material_theme_arrow_folders": true,
 	"material_theme_big_fileicons": true,
 	"material_theme_compact_sidebar": true,
+	"material_theme_small_statusbar": true,
 	"overlay_scroll_bars": "enabled",
 	"rulers":
 	[

@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+/** @BeforeScenario */
+public function gatherContexts(BeforeScenarioScope \$scope)
+{
+    \$environment = \$scope->getEnvironment();
+    \$this->${1} = \$environment->getContext('${1/(.*)/\u$1/}::class');
+}
+
+]]></content>
+    <tabTrigger>gatherContexts</tabTrigger>
+    <scope>source.php</scope>
+</snippet>
