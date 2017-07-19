@@ -1,0 +1,15 @@
+%YAML 1.2
+---
+name: FindInProject
+hidden: true
+file_extensions:
+  - findinproject
+scope: text.findinproject
+contexts:
+  main:
+    - match: '^\s*[0-9]+'
+      scope: findinproject.linenumber
+    - match: '^[\r\n]'
+      scope: findinproject.emptyline
+    - match: '^[^" "].*'
+      scope: findinproject.filename

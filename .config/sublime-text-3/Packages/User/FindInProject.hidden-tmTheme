@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plist version="1.0">
+<dict>
+   <key>name</key>
+   <string>Found in project</string>
+   <key>settings</key>
+   <array>
+      <dict>
+         <key>settings</key>
+         <dict>
+            <key>background</key>
+            <string>#272b32</string>
+
+            <key>foreground</key>
+            <string>#272b32</string>
+
+            <key>caret</key>
+            <string>#65737e44</string>
+            <key>lineHighlight</key>
+            <string>#65737e44</string>
+
+            <key>invisibles</key>
+            <string>#000000</string>
+
+            <key>selection</key>
+            <string>#222222FF</string>
+            <key>selectionBorder</key>
+            <string>#222222FF</string>
+
+            <key>inactiveSelection</key>
+            <string>#222222FF</string>
+
+            <key>shadow</key>
+            <string>#00000080</string>
+
+            <key>shadowWidth</key>
+            <string>10</string>
+
+         </dict>
+      </dict>
+
+      <!-- This dict is added as a hack to override the default foreground
+           The chosen foreground above thus only applies to rulers -->
+      <dict>
+          <key>name</key>
+          <string>Text and Source Base Colors</string>
+          <key>scope</key>
+          <string>text, source</string>
+          <key>settings</key>
+          <dict>
+              <key>foreground</key>
+              <string>#dfe1e8</string>
+          </dict>
+      </dict>
+
+      <dict>
+         <key>name</key>
+         <string>Linenumbers</string>
+         <key>scope</key>
+         <string>findinproject.linenumber</string>
+         <key>settings</key>
+         <dict>
+            <key>foreground</key>
+            <string>#BF616A</string>
+         </dict>
+      </dict>
+
+      <dict>
+         <key>name</key>
+         <string>Filenames</string>
+         <key>scope</key>
+         <string>findinproject.filename</string>
+         <key>settings</key>
+         <dict>
+            <key>foreground</key>
+            <string>#8fa1b3</string>
+         </dict>
+      </dict>
+
+      <!-- This scope is set by region highlight during search -->
+      <dict>
+         <key>name</key>
+         <string>Target string</string>
+         <key>scope</key>
+         <string>findinproject.targetstring</string>
+         <key>settings</key>
+         <dict>
+            <key>foreground</key>
+            <string>#BF616A</string>
+         </dict>
+      </dict>
+
+   </array>
+   <key>uuid</key>
+   <string>07379361-ce49-4e6c-a03f-26378a7a2131</string>
+</dict>
+</plist>
