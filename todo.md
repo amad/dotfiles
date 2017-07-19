@@ -20,8 +20,8 @@ Install:
 - xfce4-topmenu-plugin xfce4-screenshooter xfce4-screenshooter-plugin xfce4-power-manager xfce4-power-manager-plugins
 - wicd wicd-gtk wicd-cli feh
 - python-pip python-dev python-setuptools
--zeal
-
+- zeal
+- fpp
 - pip install pywatch lolcat maybe diff-highlight csvkit
 
 junegunn/fzf fuzzy finder
