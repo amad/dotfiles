@@ -1,7 +1,7 @@
 <snippet>
     <content><![CDATA[
-var_dump(${1});${2}
+private \$${1};${2}
 ]]></content>
-    <tabTrigger>vardump</tabTrigger>
+    <tabTrigger>private</tabTrigger>
     <scope>source.php</scope>
 </snippet>

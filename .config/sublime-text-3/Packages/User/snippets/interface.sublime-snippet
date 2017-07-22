@@ -2,12 +2,12 @@
     <content><![CDATA[
 <?php
 
-abstract class ${TM_FILENAME/(\w+)\.php/\1/}${2}
+interface ${TM_FILENAME/(\w+)\.php/\1/}${2}
 {
     ${0}
 }
 
 ]]></content>
-    <tabTrigger>abstract</tabTrigger>
+    <tabTrigger>interface</tabTrigger>
     <scope>source.php</scope>
 </snippet>

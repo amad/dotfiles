@@ -1,39 +1,22 @@
 {
-	"added_words":
-	[
-		"param",
-		"msisdn",
-		"params",
-		"url",
-		"shortcode",
-		"Samplatform",
-		"php",
-		"Http",
-		"zipcode",
-		"maxlength",
-		"config",
-		"bool",
-		"username",
-		"hostname",
-		"args"
-	],
-	"always_show_minimap_viewport": true,
 	"bold_folder_labels": true,
-	"caret_style": "phase",
 	"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
 	"default_encoding": "Western (ISO-8859-1)",
 	"detect_indentation": true,
 	"dictionary": "Packages/Language - English/en_US.dic",
 	"ensure_newline_at_eof_on_save": true,
 	"follow_symlinks": false,
-	"font_size": 12,
+	"font_face": "Fira Code",
+	"font_options":
+	[
+		"gray_antialias"
+	],
+	"font_size": 14,
 	"highlight_line": true,
 	"hot_exit": true,
 	"ignored_packages":
 	[
-		"CodeFormatter",
 		"ESLint",
-		"Git blame",
 		"Vintage"
 	],
 	"indent_guide_options":
@@ -42,8 +25,9 @@
 		"draw_active"
 	],
 	"line_numbers": true,
-	"line_padding_bottom": 4,
-	"line_padding_top": 4,
+	"line_padding_bottom": 3,
+	"line_padding_top": 3,
+	"margin": 3,
 	"material_theme_arrow_folders": true,
 	"material_theme_big_fileicons": true,
 	"material_theme_compact_sidebar": true,
@@ -61,5 +45,6 @@
 	"translate_tabs_to_spaces": true,
 	"trim_automatic_white_space": true,
 	"trim_trailing_white_space_on_save": true,
+	"use_simple_full_screen": true,
 	"word_wrap": false
 }

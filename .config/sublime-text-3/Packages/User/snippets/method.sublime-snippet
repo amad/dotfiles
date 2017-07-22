@@ -1,7 +1,10 @@
 <snippet>
     <content><![CDATA[
-var_dump(${1});${2}
+${1:public} function ${2}(${3})
+{
+    ${4}
+}
 ]]></content>
-    <tabTrigger>vardump</tabTrigger>
+    <tabTrigger>method</tabTrigger>
     <scope>source.php</scope>
 </snippet>
