@@ -9,9 +9,7 @@
 	"font_face": "Fira Code",
 	"font_options":
 	[
-		"gray_antialias"
 	],
-	"font_size": 14,
 	"highlight_line": true,
 	"hot_exit": true,
 	"ignored_packages":
@@ -31,7 +29,9 @@
 	"material_theme_arrow_folders": true,
 	"material_theme_big_fileicons": true,
 	"material_theme_compact_sidebar": true,
-	"material_theme_small_statusbar": true,
+	"material_theme_contrast_mode": true,
+	"material_theme_small_tab": true,
+	"material_theme_tabs_autowidth": true,
 	"overlay_scroll_bars": "enabled",
 	"rulers":
 	[

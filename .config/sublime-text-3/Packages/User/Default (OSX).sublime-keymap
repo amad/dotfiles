@@ -5,7 +5,7 @@
     { "keys": ["shift+f4"], "command": "import_namespace"},
     { "keys": ["shift+f8"], "command": "insert_constructor_prop"},
     { "keys": ["f12"], "command": "goto_definition_scope"},
-    { "keys": ["shift+f12"], "command": "find_usage"},
+    { "keys": ["super+f12"], "command": "php_find_usage"},
     { "keys": ["shift+f11"], "command": "insert_php_constructor_property"},
     { "keys": ["super+="], "command": "reindent"},
     { "keys": ["ctrl+shift+o"], "command": "prompt_open_folder"},
@@ -31,5 +31,5 @@
     { "keys": ["super+shift+="], "command": "reindent" },
     { "keys": ["ctrl+t"], "command": "run_phpunit_test" },
     { "keys": ["super+f11"], "command": "sftp_upload_file" },
-    { "keys": ["super+shift+f11"], "command": "sftp_upload_open_files" },
+    { "keys": ["super+shift+f11"], "command": "sftp_upload_open_files" }
 ]

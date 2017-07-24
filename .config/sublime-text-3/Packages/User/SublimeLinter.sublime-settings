@@ -38,7 +38,7 @@
                 "rulesets": "cleancode,codesize,controversial,design,naming,unusedcode"
             }
         },
-        "mark_style": "solid underline",
+        "mark_style": "stippled underline",
         "no_column_highlights_line": true,
         "passive_warnings": false,
         "paths": {

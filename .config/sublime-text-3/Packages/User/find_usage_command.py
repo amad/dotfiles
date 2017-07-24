@@ -7,7 +7,7 @@ import time
 import sublime
 import sublime_plugin
 
-class FindUsageCommand(sublime_plugin.TextCommand):
+class PhpFindUsageCommand(sublime_plugin.TextCommand):
     def run(self, edit):
         win = sublime.active_window()
         view = win.active_view()
@@ -146,7 +146,7 @@ class ResultBuffer:
         view.settings().set("draw_centered", False)
         view.settings().set("word_wrap", False)
         view.settings().add_on_change('color_scheme', lambda: set_proper_scheme(view))
-        view.set_syntax_file('Packages/User/FindInProject.sublime-syntax')
+        view.set_syntax_file('Packages/FindInProject/FindInProject.sublime-syntax')
 
         # Save view for later
         self.view = view
@@ -187,10 +187,10 @@ def set_proper_scheme(view):
     Set color scheme for result view
     """
     # Check if user color scheme exists
-    color_scheme = "Packages/User/FindInProject.hidden-tmTheme"
+    color_scheme = "Packages/FindInProject/FindInProject.hidden-tmTheme"
     try:
-        sublime.load_resource("Packages/User/FindInProject.hidden-tmTheme")
-        color_scheme = "Packages/User/FindInProject.hidden-tmTheme"
+        sublime.load_resource("Packages/FindInProject/FindInProject.hidden-tmTheme")
+        color_scheme = "Packages/FindInProject/FindInProject.hidden-tmTheme"
     except:
         pass
 
