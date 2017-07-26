@@ -1,7 +1,7 @@
 <snippet>
     <content><![CDATA[
-declare(strict_types=1);
+return \$this->${1};
 ]]></content>
-    <tabTrigger>declarestrict_types</tabTrigger>
+    <tabTrigger>returnthis</tabTrigger>
     <scope>source.php</scope>
 </snippet>

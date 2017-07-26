@@ -9,5 +9,4 @@ interface ${TM_FILENAME/(\w+)\.php/\1/}${2}
 
 ]]></content>
     <tabTrigger>interface</tabTrigger>
-    <scope>source.php</scope>
 </snippet>

@@ -9,5 +9,4 @@ class ${TM_FILENAME/(\w+)\.php/\1/}${2}
 
 ]]></content>
     <tabTrigger>class</tabTrigger>
-    <scope>source.php</scope>
 </snippet>

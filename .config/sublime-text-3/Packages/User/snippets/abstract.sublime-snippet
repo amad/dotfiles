@@ -9,5 +9,4 @@ abstract class ${TM_FILENAME/(\w+)\.php/\1/}${2}
 
 ]]></content>
     <tabTrigger>abstract</tabTrigger>
-    <scope>source.php</scope>
 </snippet>

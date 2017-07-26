@@ -8,5 +8,10 @@
         "caption": "PHP: Find Usage",
         "command": "find_usage",
         "args": {}
+    },
+    {
+        "caption": "Calculate and replace",
+        "command": "calculate",
+        "args": {"replace": true}
     }
 ]

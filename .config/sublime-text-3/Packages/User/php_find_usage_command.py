@@ -25,7 +25,7 @@ class PhpFindUsageCommand(sublime_plugin.TextCommand):
             return
 
         self._target_string = keyword
-        pattern = '(new|use|extends|class).*(\\'+'\\|\s|\()'+keyword+'(\(|\)|;|$)|'+keyword+'(::| \$)';
+        pattern = '(new|use|extends|class).*(\\'+'\\|\s|\()'+keyword+'(\(|\)|;|$)|'+keyword+'(::| \$)|>'+keyword;
 
         project_data = win.project_data()
 
@@ -37,7 +37,7 @@ class PhpFindUsageCommand(sublime_plugin.TextCommand):
 
         for path in project_dirs:
             for root, dirs, files in os.walk(path, followlinks=True):
-                dirs[:] = [d for d in dirs if d.lower() not in []]
+                dirs[:] = [d for d in dirs if d.lower() not in ['node_modules']]
                 for file in files:
                     ret = collections.OrderedDict()
                     file_ext = os.path.splitext(file)[1][1:]

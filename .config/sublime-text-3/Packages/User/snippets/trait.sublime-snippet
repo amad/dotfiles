@@ -9,5 +9,4 @@ trait ${TM_FILENAME/(\w+)\.php/\1/}${2}
 
 ]]></content>
     <tabTrigger>trait</tabTrigger>
-    <scope>source.php</scope>
 </snippet>

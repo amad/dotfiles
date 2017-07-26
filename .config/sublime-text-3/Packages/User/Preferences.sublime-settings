@@ -1,7 +1,12 @@
 {
+	"added_words":
+	[
+		"php",
+		"bool",
+		"param"
+	],
 	"bold_folder_labels": true,
 	"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
-	"default_encoding": "Western (ISO-8859-1)",
 	"detect_indentation": true,
 	"dictionary": "Packages/Language - English/en_US.dic",
 	"ensure_newline_at_eof_on_save": true,
