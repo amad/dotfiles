@@ -80,6 +80,7 @@ alias merge='git merge'
 alias mergenoff='git merge --no-ff'
 alias copy='fpp -c "echo \$F | pbcopy"'
 alias edit='fpp -c subl'
+alias hmm='subl ./'
 
 # PHP
 alias ptree='tree -d -L 10 -I "vendor|tests|test|node_modules" --matchdirs'
