@@ -25,7 +25,7 @@ class PhpFindUsageCommand(sublime_plugin.TextCommand):
             return
 
         self._target_string = keyword
-        pattern = '(new|use|extends|class).*(\\'+'\\|\s|\()'+keyword+'(\(|\)|;|$)|'+keyword+'(::| \$)|>'+keyword;
+        pattern = '(new|use|extends|class).*(\\'+'\\|\s|\()'+keyword+'(\(|\)|;|$)|'+keyword+'(::| \$)|(>|::)'+keyword;
 
         project_data = win.project_data()
 
