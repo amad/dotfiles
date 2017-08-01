@@ -81,6 +81,7 @@ alias mergenoff='git merge --no-ff'
 alias copy='fpp -c "echo \$F | pbcopy"'
 alias edit='fpp -c subl'
 alias hmm='subl ./'
+alias repo="open https://github.(git config remote.origin.url | cut -f2 -d. | tr ':' /)"
 
 # PHP
 alias ptree='tree -d -L 10 -I "vendor|tests|test|node_modules" --matchdirs'
