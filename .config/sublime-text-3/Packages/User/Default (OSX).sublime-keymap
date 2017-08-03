@@ -34,5 +34,12 @@
     { "keys": ["super+shift+f11"], "command": "sftp_upload_open_files" },
     { "keys": ["shift+super+up"], "command": "swap_line_up" },
     { "keys": ["shift+super+down"], "command": "swap_line_down" },
-    { "keys": ["ctrl+shift+'"], "command": "change_quotes" }
+    { "keys": ["ctrl+shift+'"], "command": "change_quotes" },
+    { "keys": ["j", "j"], "command": "exit_insert_mode",
+        "context":
+        [
+            { "key": "setting.command_mode", "operand": false },
+            { "key": "setting.is_widget", "operand": false }
+        ]
+    }
 ]

@@ -19,8 +19,7 @@
 	"hot_exit": true,
 	"ignored_packages":
 	[
-		"ESLint",
-		"Vintage"
+		"ESLint"
 	],
 	"indent_guide_options":
 	[
@@ -28,8 +27,8 @@
 		"draw_active"
 	],
 	"line_numbers": true,
-	"line_padding_bottom": 5,
-	"line_padding_top": 5,
+	"line_padding_bottom": 7,
+	"line_padding_top": 7,
 	"margin": 3,
 	"material_theme_arrow_folders": true,
 	"material_theme_big_fileicons": true,

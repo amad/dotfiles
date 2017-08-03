@@ -25,3 +25,4 @@ Install:
 - pip install pywatch lolcat maybe diff-highlight csvkit
 
 junegunn/fzf fuzzy finder
+defaults write com.sublimetext.3 ApplePressAndHoldEnabled -bool false

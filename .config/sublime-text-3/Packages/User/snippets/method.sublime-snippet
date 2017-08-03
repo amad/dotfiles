@@ -6,5 +6,4 @@ ${1:public} function ${2}(${3})
 }
 ]]></content>
     <tabTrigger>method</tabTrigger>
-    <scope>source.php</scope>
 </snippet>
