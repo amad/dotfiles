@@ -36,6 +36,7 @@ Bundle 'airblade/vim-gitgutter'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'kana/vim-textobj-user'
 Bundle 'nelstrom/vim-textobj-rubyblock'
+Bundle 'bkad/CamelCaseMotion'
 
 " vim-scripts repos
 "Bundle 'L9'
@@ -91,12 +92,15 @@ set wrap
 set shell=/bin/bash
 syntax on
 
-highlight   CursorColumn  term=NONE    cterm=none ctermbg=232
-highlight   CursorLine    term=NONE    cterm=bold ctermbg=8
+
+colorscheme mustang
+highlight   cursorcolumn  term=none    cterm=none gui=none   ctermbg=232
+highlight   cursorline    term=none    gui=none   cterm=none ctermbg=232
 highlight   FoldColumn                            ctermbg=8  ctermfg=14
 highlight   Folded                                ctermbg=8  ctermfg=14
 highlight   Search        term=reverse cterm=bold ctermbg=11 ctermfg=0
 highlight   Visual        term=NONE    cterm=bold ctermbg=10 ctermfg=8
+
 "
 "" makes Omni Completion less pinky :P
 highlight   Pmenu                                 ctermbg=2  ctermfg=0
@@ -132,4 +136,16 @@ autocmd FileType gitcommit autocmd! BufEnter COMMIT_EDITMSG call setpos('.', [0,
 autocmd FileType php noremap <C-L> :!/usr/bin/env php -l %<CR>
 autocmd FileType phtml noremap <C-L> :!/usr/bin/env php -l %<CR>
 
-colorscheme neodark
+
+"colorscheme srcery
+map <silent> w <Plug>CamelCaseMotion_w
+map <silent> b <Plug>CamelCaseMotion_b
+map <silent> e <Plug>CamelCaseMotion_e
+map <silent> ge <Plug>CamelCaseMotion_ge
+sunmap w
+sunmap b
+sunmap e
+sunmap ge
+
+:nnoremap <F8> :!!<CR>
+:map - :w \| :!!<CR>
