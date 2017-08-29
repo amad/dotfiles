@@ -1,11 +1,10 @@
 {
 	"user":
 	{
-		"@disable": true,
 		"debug": true,
 		"delay": 0.25,
 		"error_color": "D02000",
-		"gutter_theme": "Packages/SublimeLinter/gutter-themes/Default/Default.gutter-theme",
+		"gutter_theme": "none",
 		"gutter_theme_excludes":
 		[
 		],
@@ -70,7 +69,7 @@
 				"rulesets": "cleancode,codesize,controversial,design,naming,unusedcode"
 			}
 		},
-		"mark_style": "stippled underline",
+		"mark_style": "outline",
 		"no_column_highlights_line": true,
 		"passive_warnings": false,
 		"paths":

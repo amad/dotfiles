@@ -13,5 +13,10 @@
         "caption": "Calculate and replace",
         "command": "calculate",
         "args": {"replace": true}
+    },
+    {
+        "caption": "Require NodeJS",
+        "command": "require_node",
+        "args": {}
     }
 ]
