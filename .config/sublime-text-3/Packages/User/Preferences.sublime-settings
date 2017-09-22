@@ -3,24 +3,27 @@
 	[
 		"php",
 		"bool",
-		"param"
+		"param",
+		"config"
 	],
 	"bold_folder_labels": false,
-	"caret_extra_bottom": 2,
-	"caret_extra_top": 2,
+	"caret_extra_bottom": 3,
+	"caret_extra_top": 3,
 	"caret_extra_width": 2,
-	"caret_style": "phase",
-	"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
+	"caret_style": "solid",
+	"color_scheme": "Packages/User/SublimeLinter/GitHub (SL).tmTheme",
 	"detect_indentation": true,
 	"dictionary": "Packages/Language - English/en_US.dic",
 	"ensure_newline_at_eof_on_save": true,
 	"fade_fold_buttons": false,
 	"follow_symlinks": false,
 	"font_size": 12,
-	"highlight_line": true,
+	"highlight_line": false,
 	"hot_exit": true,
 	"ignored_packages":
 	[
+		"AceJump",
+		"Cucumber Step Finder"
 	],
 	"indent_guide_options":
 	[
@@ -29,7 +32,7 @@
 	],
 	"line_numbers": true,
 	"line_padding_bottom": 3,
-	"line_padding_top": 2,
+	"line_padding_top": 3,
 	"margin": 3,
 	"material_theme_accent_graphite": true,
 	"material_theme_big_fileicons": true,
@@ -40,13 +43,12 @@
 	"rulers":
 	[
 		120,
-		100,
 		80
 	],
 	"show_encoding": true,
 	"spell_check": true,
 	"tab_size": 4,
-	"theme": "Material-Theme-Darker.sublime-theme",
+	"theme": "Adaptive.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_automatic_white_space": true,
 	"trim_trailing_white_space_on_save": true,
