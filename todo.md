@@ -25,4 +25,5 @@ Install:
 - pip install pywatch lolcat maybe diff-highlight csvkit
 
 junegunn/fzf fuzzy finder
+facebook/PathPicker
 defaults write com.sublimetext.3 ApplePressAndHoldEnabled -bool false
