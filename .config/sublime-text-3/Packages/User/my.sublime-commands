@@ -18,5 +18,10 @@
         "caption": "Require NodeJS",
         "command": "require_node",
         "args": {}
+    },
+    {
+        "caption": "PHP: Remove unused imports",
+        "command": "sublime_php_cs_fix",
+        "args": {}
     }
 ]
