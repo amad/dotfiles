@@ -17,7 +17,6 @@
 	"ensure_newline_at_eof_on_save": true,
 	"fade_fold_buttons": false,
 	"follow_symlinks": false,
-	"font_size": 12,
 	"highlight_line": false,
 	"hot_exit": true,
 	"ignored_packages":
