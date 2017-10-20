@@ -6,6 +6,8 @@
     { "keys": ["shift+f8"], "command": "insert_constructor_prop"},
     { "keys": ["f12"], "command": "goto_definition_scope"},
     { "keys": ["super+f12"], "command": "php_find_usage"},
+    { "keys": ["super+h"], "command": "goto_definition_scope"},
+    { "keys": ["super+shift+h"], "command": "php_find_usage"},
     { "keys": ["shift+f11"], "command": "insert_php_constructor_property"},
     { "keys": ["super+."], "command": "reindent"},
     { "keys": ["ctrl+shift+o"], "command": "prompt_open_folder"},
