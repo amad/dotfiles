@@ -1,6 +1,6 @@
 source ~/.bash_aliases
 alias `~`='cd ~'
-fortune | cowsay -f elephant | lolcat
+fortune -s -n 100 -e computers | cowsay -f default | lolcat
 set -g -x fish_greeting ''
 set -gx PATH $PATH $HOME/bin
 set -gx PATH $PATH $HOME/.npm-global/bin
