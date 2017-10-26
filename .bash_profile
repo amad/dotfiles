@@ -13,6 +13,11 @@ function nah() {
     git clean -fd
 }
 
+function fixme() {
+    git commit --fixup $1
+    GIT_SEQUENCE_EDITOR=true git rebase -i --autosquash --autostash master
+}
+
 if [ "$BASH" ]; then
     alias fuck='sudo $(history -p \!\!)';
 fi
