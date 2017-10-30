@@ -20,3 +20,4 @@
     diff = diff-highlight | less
 [alias]
     yolo = !git commit -m \"$(curl -s http://whatthecommit.com/index.txt)\"
+    standup = git --no-pager log --all --no-merges --oneline --date="relative" --since="yesterday"

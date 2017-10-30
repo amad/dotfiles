@@ -66,7 +66,7 @@ alias standup='git --no-pager log --all --no-merges --oneline --date="relative" 
 alias mystandup='standup --author=(git config user.name)'
 alias glp='git log -p'
 alias log='git log -p --decorate'
-alias gl='git log --graph --decorate --abbrev-commit --pretty=oneline -n 20'
+alias gl='git log --graph --decorate --abbrev-commit --pretty=format:"%C(auto,yellow)%h%Creset %C(auto,bold)%s%Creset %Cgreen(%ar)%Creset%Cred%d%Creset %C(auto,dim)%aN%Creset" -n 20'
 alias rmbranch='git branch -D'
 alias rmibranch='git push origin :'
 alias merged='git branch --merged | grep -v "\*"'

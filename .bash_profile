@@ -13,7 +13,7 @@ function nah() {
     git clean -fd
 }
 
-function fixme() {
+function fixupme() {
     git commit --fixup $1
     GIT_SEQUENCE_EDITOR=true git rebase -i --autosquash --autostash master
 }
