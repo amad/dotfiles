@@ -68,6 +68,19 @@
 				[
 				],
 				"rulesets": "cleancode,codesize,controversial,design,naming,unusedcode"
+			},
+			"psalm":
+			{
+				"@disable": false,
+				"args":
+				[
+				],
+				"config": "--config=${project}/psalm.xml",
+				"excludes":
+				[
+				],
+				"monochrome": "-m",
+				"root": "--root=${project}"
 			}
 		},
 		"mark_style": "fill",
@@ -99,8 +112,9 @@
 		},
 		"rc_search_limit": 3,
 		"shell_timeout": 10,
-		"show_errors_on_save": true,
+		"show_errors_on_save": false,
 		"show_marks_in_minimap": true,
+		"sublimelinter_popup_errors_on_save": true,
 		"syntax_map":
 		{
 			"html (django)": "html",

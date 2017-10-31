@@ -46,6 +46,7 @@
 	],
 	"show_encoding": true,
 	"spell_check": true,
+	"sublimelinter_popup_errors_on_save": true,
 	"tab_size": 4,
 	"theme": "Adaptive.sublime-theme",
 	"translate_tabs_to_spaces": true,
@@ -53,6 +54,5 @@
 	"trim_trailing_white_space_on_save": true,
 	"use_simple_full_screen": true,
 	"vintage_start_in_command_mode": false,
-	"sublimelinter_popup_errors_on_save": true,
 	"word_wrap": false
 }
