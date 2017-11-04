@@ -13,8 +13,9 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " My Bundles here:
-"
+" leader = \
 " original repos on github
+Bundle 'scrooloose/nerdtree'
 Bundle 'matchit.zip'
 Bundle 'tpope/vim-fugitive'
 Bundle 'c9s/perlomni.vim'
