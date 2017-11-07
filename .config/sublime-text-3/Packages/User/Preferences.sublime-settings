@@ -18,6 +18,7 @@
 	"fade_fold_buttons": false,
 	"follow_symlinks": false,
 	"highlight_line": false,
+	"font_face": "Fira Code",
 	"hot_exit": true,
 	"ignored_packages":
 	[
