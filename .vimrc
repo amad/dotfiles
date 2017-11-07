@@ -37,6 +37,7 @@ Bundle 'vim-ruby/vim-ruby'
 Bundle 'kana/vim-textobj-user'
 Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'bkad/CamelCaseMotion'
+Bundle 'tpope/vim-surround'
 
 " vim-scripts repos
 "Bundle 'L9'
