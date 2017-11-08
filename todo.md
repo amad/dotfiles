@@ -23,6 +23,7 @@ Install:
 - zeal
 - fpp
 - pip install pywatch lolcat maybe diff-highlight csvkit
+- hub
 
 junegunn/fzf fuzzy finder
 facebook/PathPicker
