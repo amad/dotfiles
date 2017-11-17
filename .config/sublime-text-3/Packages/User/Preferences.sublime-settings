@@ -17,8 +17,8 @@
 	"ensure_newline_at_eof_on_save": true,
 	"fade_fold_buttons": false,
 	"follow_symlinks": false,
-	"highlight_line": false,
 	"font_face": "Fira Code",
+	"highlight_line": false,
 	"hot_exit": true,
 	"ignored_packages":
 	[

@@ -25,6 +25,7 @@
     {"keys": ["f9"], "command": "xdebug_session_start"},
     {"keys": ["f10"], "command": "xdebug_session_stop"},
     {"keys": ["super+shift+f11"], "command": "xdebug_layout", "args": {"keymap" : true}},
+    {"keys": ["shift+f10"], "command": "xdebug_layout", "args": {"keymap" : true}},
     { "keys": ["super+["], "command": "jump_back" },
     { "keys": ["super+]"], "command": "jump_forward" },
     { "keys": ["super+shift+t"], "command": "reopen_last_file" },
