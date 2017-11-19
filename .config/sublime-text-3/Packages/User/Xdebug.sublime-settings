@@ -22,7 +22,7 @@
         // default
         "Unknown error"
     ],
-    "ide_key": "SUBLIME",
+    "ide_key": "CODE",
     "pretty_output": true,
     "close_on_stop": true,
     "break_on_start": false,
