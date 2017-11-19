@@ -21,3 +21,7 @@ function fixupme() {
 if [ "$BASH" ]; then
     alias fuck='sudo $(history -p \!\!)';
 fi
+
+if [ "$TERM_PROGRAM" == *"Terminal"* ]; then
+  fortune -s -n 100 -e computers | cowsay -f default | lolcat
+fi
