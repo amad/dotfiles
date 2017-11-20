@@ -15,5 +15,5 @@
 [kp-lctrl]>[kp-lwin]
 [kp-rctrl]>[kp-rwin]
 [kp-rwin]>[kp-rctrl]
-{home}>{rwin}{lctrl}
-{pup}>{rwin}{lalt}
+[pup]>[hyphen]
+[home]>[=]
