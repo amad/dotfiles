@@ -153,3 +153,4 @@ sunmap ge
 :map - :w \| :!!<CR>
 
 set clipboard=unnamed
+:nnoremap Q <Nop>
