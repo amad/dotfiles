@@ -39,6 +39,17 @@ Bundle 'kana/vim-textobj-user'
 Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'bkad/CamelCaseMotion'
 Bundle 'tpope/vim-surround'
+Bundle 'ludovicchabant/vim-gutentags'
+Bundle 'Townk/vim-autoclose'
+Bundle 'tpope/vim-commentary'
+Bundle 'joonty/vdebug'
+Bundle 'lumiliet/vim-twig'
+Bundle 'StanAngeloff/php.vim'
+Bundle 'stephpy/vim-php-cs-fixer'
+Bundle 'arnaud-lb/vim-php-namespace'
+Bundle 'nishigori/vim-php-dictionary'
+Bundle 'phpstan/vim-phpstan'
+Bundle 'Valloric/YouCompleteMe'
 
 " vim-scripts repos
 "Bundle 'L9'
@@ -161,4 +172,8 @@ vnoremap <leader>d "_d
 " replace currently selected text with default register
 " without yanking it
 vnoremap <leader>p "_dP
+
+map <C-n> :NERDTreeToggle<CR>
+autocmd BufWritePre *.* :%s/\s\+$//e
+autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 
