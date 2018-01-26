@@ -48,4 +48,6 @@ return PhpCsFixer\Config::create()->setRules([
     'mb_str_functions' => true,
     'final_internal_class' => true,
     'compact_nullable_typehint' => true,
+    'cast_spaces' => ['space' => 'none'],
+    'trailing_comma_in_multiline_array' => false,
 ]);

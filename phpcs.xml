@@ -68,7 +68,7 @@
     <rule ref="Zend.Files.ClosingTag"/>
 
      <!-- We use custom indent rules for arrays -->
-    <rule ref="Generic.Arrays.ArrayIndent"/>
+    <!-- <rule ref="Generic.Arrays.ArrayIndent"/> -->
     <rule ref="Squiz.Arrays.ArrayDeclaration.KeyNotAligned">
         <severity>0</severity>
     </rule>
