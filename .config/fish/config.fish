@@ -12,6 +12,7 @@ set -gx PATH $PATH /usr/local/opt/go/libexec/bin
 set -gx XDEBUG_CONFIG 'idekey=CODE'
 set -gx GOPATH $HOME/Go
 set -gx GOROOT /usr/local/opt/go/libexec
+set -gx GPG_TTY (tty)
 
 if [ "$TERM_PROGRAM" = "Apple_Terminal" ]
   fortune -s -n 100 -e computers | cowsay -f default | lolcat

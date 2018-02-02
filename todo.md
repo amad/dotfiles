@@ -24,6 +24,7 @@ Install:
 - fpp
 - pip install pywatch lolcat maybe diff-highlight csvkit
 - hub
+- gpg
 
 junegunn/fzf fuzzy finder
 facebook/PathPicker
