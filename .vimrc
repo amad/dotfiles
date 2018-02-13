@@ -50,7 +50,8 @@ Bundle 'arnaud-lb/vim-php-namespace'
 Bundle 'nishigori/vim-php-dictionary'
 Bundle 'phpstan/vim-phpstan'
 Bundle 'Valloric/YouCompleteMe'
-
+Bundle 'junegunn/fzf'
+", { 'dir': '~/.fzf', 'do': './install --all' }
 " vim-scripts repos
 "Bundle 'L9'
 "Bundle 'FuzzyFinder'
