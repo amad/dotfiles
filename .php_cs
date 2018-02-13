@@ -53,4 +53,5 @@ return PhpCsFixer\Config::create()->setRules([
     'not_operator_with_space' => false,
     'not_operator_with_successor_space' => false,
     'new_with_braces' => false,
+    'concat_space' => ['spacing' => 'one'],
 ]);
