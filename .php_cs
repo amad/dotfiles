@@ -54,4 +54,5 @@ return PhpCsFixer\Config::create()->setRules([
     'new_with_braces' => false,
     'concat_space' => ['spacing' => 'one'],
     'native_function_invocation' => true,
+    'new_with_braces' => false,
 ]);
