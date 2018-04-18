@@ -12,7 +12,10 @@
 [bspace]>[rwin]
 [rctrl]>[lalt]
 [kp-rctrl]>[kp-rwin]
-[rwin]>[pup]
+[rwin]>[pdown]
 [kp-rwin]>[kp-rctrl]
 [pdown]>[rctrl]
 {home}>{-lshift}{-lalt}{enter}{+lalt}{+lshift}
+{pup}>{-rwin}{tab}{+rwin}
+{lalt}>{-lalt}{-lshift}{-rctrl}{w}{+rctrl}{+lalt}{+lshift}
+{rwin}>{-lalt}{-lshift}{-rctrl}{e}{+rctrl}{+lalt}{+lshift}
