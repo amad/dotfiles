@@ -70,6 +70,7 @@ alias gl='git log --graph --decorate --abbrev-commit --pretty=format:"%C(auto,ye
 alias rmbranch='git branch -D'
 alias rmibranch='git push origin :'
 alias merged='git branch --merged | grep -v "\*"'
+alias rmmerged='git branch --merged | grep -v "\*" | xargs -n 1 git branch -D'
 alias allmerged='git branch --merged -r | grep -v "\*"'
 alias notmerged='git branch --no-merged'
 alias show-ref='git show-ref'
