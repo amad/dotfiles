@@ -51,6 +51,7 @@ Bundle 'nishigori/vim-php-dictionary'
 Bundle 'phpstan/vim-phpstan'
 " Bundle 'Valloric/YouCompleteMe'
 Bundle 'junegunn/fzf'
+Bundle 'editorconfig/editorconfig-vim'
 ", { 'dir': '~/.fzf', 'do': './install --all' }
 " vim-scripts repos
 "Bundle 'L9'
