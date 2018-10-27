@@ -1,77 +1,71 @@
 version 7.0
 
-""" Vundle Entries
-" NOTE: comments after Bundle command are not allowed..
-set nocompatible               " be iMproved
-filetype off                   " required!
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+call plug#begin('~/.vim/bundle')
 
-set runtimepath+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-" let Vundle manage Vundle
-" required!
-Bundle 'gmarik/vundle'
-
-" My Bundles here:
 " leader = \
-" original repos on github
-Bundle 'scrooloose/nerdtree'
-Bundle 'matchit.zip'
-Bundle 'tpope/vim-fugitive'
-Bundle 'c9s/perlomni.vim'
-Bundle 'kien/ctrlp.vim'
-  map <Leader>t :CtrlPBuffer<CR>
-  let g:ctrlp_working_path_mode = 0 " don’t manage working directory.
-  let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v\c\.(git|svn)$|cgi/t/sandbox|cover_db',
-  \ 'file': '\v\c\.(swf|bak|png|gif|mov|ico|jpg|pdf|jrxml)$',
-  \ }
-Bundle 'Lokaltog/vim-powerline'
+Plug 'scrooloose/nerdtree'
+" Plug 'matchit.zip'
+Plug 'tpope/vim-fugitive'
+Plug 'c9s/perlomni.vim'
+"Plug 'kien/ctrlp.vim'
+"  map <Leader>t :CtrlPBuffer<CR>
+"  let g:ctrlp_working_path_mode = 0 " don’t manage working directory.
+"  let g:ctrlp_custom_ignore = {
+"  \ 'dir':  '\v\c\.(git|svn)$|cgi/t/sandbox|cover_db',
+"  \ 'file': '\v\c\.(swf|bak|png|gif|mov|ico|jpg|pdf|jrxml)$',
+"  \ }
+Plug 'Lokaltog/vim-powerline'
   let g:Powerline_symbols = 'fancy'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'mileszs/ack.vim'
-Bundle 'cakebaker/scss-syntax.vim'
-Bundle 'airblade/vim-gitgutter'
+Plug 'Lokaltog/vim-easymotion'
+Plug 'mileszs/ack.vim'
+Plug 'cakebaker/scss-syntax.vim'
+Plug 'airblade/vim-gitgutter'
   let g:gitgutter_sign_column_always = 1
   highlight clear SignColumn
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'kana/vim-textobj-user'
-Bundle 'nelstrom/vim-textobj-rubyblock'
-Bundle 'bkad/CamelCaseMotion'
-Bundle 'tpope/vim-surround'
-Bundle 'ludovicchabant/vim-gutentags'
-Bundle 'Townk/vim-autoclose'
-Bundle 'tpope/vim-commentary'
-Bundle 'joonty/vdebug'
-Bundle 'lumiliet/vim-twig'
-Bundle 'StanAngeloff/php.vim'
-Bundle 'stephpy/vim-php-cs-fixer'
-Bundle 'arnaud-lb/vim-php-namespace'
-Bundle 'nishigori/vim-php-dictionary'
-Bundle 'phpstan/vim-phpstan'
-" Bundle 'Valloric/YouCompleteMe'
-Bundle 'junegunn/fzf'
-Bundle 'editorconfig/editorconfig-vim'
-", { 'dir': '~/.fzf', 'do': './install --all' }
-" vim-scripts repos
-"Bundle 'L9'
-"Bundle 'FuzzyFinder'
-"  let g:fuf_coveragefile_exclude = '\c\.\(swf\|bak\|png\|gif\|js\|mov\|ico\|jpg\|pdf\|jrxml\)$\|cgi\/t\/sandbox\|\/cover_db\/'
-"  map <Leader>t :FufBuffer<CR>
-"  map <C-t> :FufCoverageFile<CR>
+  Plug 'vim-ruby/vim-ruby'
+Plug 'kana/vim-textobj-user'
+Plug 'nelstrom/vim-textobj-rubyblock'
+Plug 'bkad/CamelCaseMotion'
+Plug 'tpope/vim-surround'
+Plug 'ludovicchabant/vim-gutentags'
+Plug 'Townk/vim-autoclose'
+Plug 'tpope/vim-commentary'
+Plug 'joonty/vdebug'
+Plug 'lumiliet/vim-twig'
+Plug 'StanAngeloff/php.vim'
+Plug 'stephpy/vim-php-cs-fixer'
+Plug 'arnaud-lb/vim-php-namespace'
+Plug 'nishigori/vim-php-dictionary'
+Plug 'phpstan/vim-phpstan'
+" Plug 'Valloric/YouCompleteMe'
+" Plug 'junegunn/fzf'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'junegunn/vim-plug'
 
-" non github repos
-"Bundle 'git://git.wincent.com/command-t.git'
-" ...
+" FZF / Ctrlp for file navigation
+if executable('fzf')
+  " OSX vs Linux loading (depending on where fzf is)
+  let s:uname = system("echo -n \"$(uname)\"")
+  if !v:shell_error && s:uname == "Darwin"
+    Plug '/usr/local/opt/fzf'
+  else
+    Plug 'junegunn/fzf', {'dir': '~/.local/src/fzf', 'do': './install --all' }
+  endif
+  Plug 'junegunn/fzf.vim'
+else
+  Plug 'ctrlpvim/ctrlp.vim'
+endif
 
-filetype plugin indent on     " required!
+call plug#end()
 
-""" vimrc resumes :-)
-set nocompatible
-syntax on
-"filetype off
-"filetype plugin on
-"filetype indent on
+let mapleader = ' '
+let maplocalleader = ' '
+
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
@@ -116,7 +110,6 @@ highlight   Folded                                ctermbg=8  ctermfg=14
 highlight   Search        term=reverse cterm=bold ctermbg=11 ctermfg=0
 highlight   Visual        term=NONE    cterm=bold ctermbg=10 ctermfg=8
 
-"
 "" makes Omni Completion less pinky :P
 highlight   Pmenu                                 ctermbg=2  ctermfg=0
 highlight   PmenuSel                              ctermbg=7  ctermfg=0
@@ -179,3 +172,18 @@ map <C-n> :NERDTreeToggle<CR>
 autocmd BufWritePre *.* :%s/\s\+$//e
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 
+" Ripgrep for file indexing, sort of faster, but not really, but also why not use ripgrep for everything
+if executable('rg')
+  let $FZF_DEFAULT_COMMAND = 'rg --files --no-messages "" .'
+endif
+
+" Use FZF for files and tags if available, otherwise fall back onto CtrlP
+" <leader>j will search for tag using word under cursor
+let g:fzf_command_prefix = 'Fzf'
+if executable('fzf')
+  nnoremap <leader>t :FzfFiles<cr>
+  nnoremap <leader>u :FzfTags<cr>
+  nnoremap <leader>j :call fzf#vim#tags("'".expand('<cword>'))<cr>
+else
+  nnoremap <leader>t :CtrlP<Space><cr>
+endif
