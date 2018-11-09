@@ -105,4 +105,4 @@ alias newfiles='git whatchanged --diff-filter=A'
 # PHP
 alias ptree='tree -d -L 10 -I "vendor|tests|test|node_modules" --matchdirs'
 alias pdoc='/usr/bin/phpdoc -d ./ -t ./docs -i "docs/*,vendor/*"'
-alias phpxdebug='php -dxdebug.remote_enable=1 -dxdebug.remote_mode=req -dxdebug.remote_port=9000 -dxdebug.remote_host=127.0.0.1 -dxdebug.remote_connect_back=0'
+alias phpxdebug='php -dxdebug.remote_autostart=1 -dxdebug.remote_enable=1 -dxdebug.remote_mode=req -dxdebug.remote_port=9000 -dxdebug.remote_host=127.0.0.1 -dxdebug.remote_connect_back=0'

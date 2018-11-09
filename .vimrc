@@ -183,6 +183,7 @@ let g:fzf_command_prefix = 'Fzf'
 if executable('fzf')
   nnoremap <leader>t :FzfFiles<cr>
   nnoremap <leader>u :FzfTags<cr>
+  nnoremap <leader>y :FzfBTags<cr>
   nnoremap <leader>j :call fzf#vim#tags("'".expand('<cword>'))<cr>
 else
   nnoremap <leader>t :CtrlP<Space><cr>
