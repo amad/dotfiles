@@ -25,7 +25,7 @@ Plug 'Lokaltog/vim-easymotion'
 Plug 'mileszs/ack.vim'
 Plug 'cakebaker/scss-syntax.vim'
 Plug 'airblade/vim-gitgutter'
-  let g:gitgutter_sign_column_always = 1
+  set signcolumn=yes
   highlight clear SignColumn
   Plug 'vim-ruby/vim-ruby'
 Plug 'kana/vim-textobj-user'

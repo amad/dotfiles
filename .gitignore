@@ -18,3 +18,5 @@ fish/fish_history
 .config/sublime-text-3/Packages/User/Xdebug.breakpoints
 .config/sublime-text-3/Packages/User/Xdebug.log
 .config/sublime-text-3/Packages/User/oscrypto-ca-bundle.crt
+.phan/
+tags
