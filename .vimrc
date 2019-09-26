@@ -61,6 +61,10 @@ else
   Plug 'ctrlpvim/ctrlp.vim'
 endif
 
+Plug 'leafgarland/typescript-vim'
+
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
 call plug#end()
 
 let mapleader = ' '
