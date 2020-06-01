@@ -1,0 +1,1 @@
+/Users/ahmadsamiei/.local/src/fzf/shell/key-bindings.fish
