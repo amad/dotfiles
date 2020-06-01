@@ -31,7 +31,8 @@ facebook/PathPicker
 defaults write com.sublimetext.3 ApplePressAndHoldEnabled -bool false
 
 fisher:
-fishpkg/fish-prompt-metro
-fishpkg/fish-humanize-duration
-franciscolourenco/done
-laughedelic/pisces
+fisher add fishpkg/fish-prompt-metro
+fisher add fishpkg/fish-humanize-duration
+fisher add franciscolourenco/done
+fisher add laughedelic/pisces
+fisher add jethrokuan/fzf
