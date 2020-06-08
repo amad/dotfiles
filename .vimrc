@@ -37,15 +37,16 @@ Plug 'Townk/vim-autoclose'
 Plug 'tpope/vim-commentary'
 Plug 'joonty/vdebug'
 Plug 'lumiliet/vim-twig'
-Plug 'StanAngeloff/php.vim'
-Plug 'stephpy/vim-php-cs-fixer'
-Plug 'arnaud-lb/vim-php-namespace'
-Plug 'nishigori/vim-php-dictionary'
-Plug 'phpstan/vim-phpstan'
+" Plug 'StanAngeloff/php.vim'
+" Plug 'stephpy/vim-php-cs-fixer'
+" Plug 'arnaud-lb/vim-php-namespace'
+" Plug 'nishigori/vim-php-dictionary'
+" Plug 'phpstan/vim-phpstan'
 " Plug 'Valloric/YouCompleteMe'
 " Plug 'junegunn/fzf'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'junegunn/vim-plug'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " FZF / Ctrlp for file navigation
 if executable('fzf')
@@ -70,9 +71,15 @@ call plug#end()
 let mapleader = ' '
 let maplocalleader = ' '
 
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+autocmd Filetype php setlocal tabstop=4
+autocmd Filetype php setlocal softtabstop=4
+autocmd Filetype php setlocal shiftwidth=4
+autocmd Filetype go setlocal tabstop=4
+autocmd Filetype go setlocal softtabstop=4
+autocmd Filetype go setlocal shiftwidth=4
 set expandtab
 set autoindent
 set backspace=indent,eol,start
@@ -104,7 +111,6 @@ set virtualedit=block
 set wrap
 set shell=/bin/bash
 syntax on
-
 
 colorscheme mustang
 highlight   cursorcolumn  term=none    cterm=none gui=none   ctermbg=232
@@ -148,8 +154,6 @@ autocmd FileType gitcommit autocmd! BufEnter COMMIT_EDITMSG call setpos('.', [0,
 autocmd FileType php noremap <C-L> :!/usr/bin/env php -l %<CR>
 autocmd FileType phtml noremap <C-L> :!/usr/bin/env php -l %<CR>
 
-
-"colorscheme srcery
 map <silent> w <Plug>CamelCaseMotion_w
 map <silent> b <Plug>CamelCaseMotion_b
 map <silent> e <Plug>CamelCaseMotion_e
@@ -174,7 +178,7 @@ vnoremap <leader>p "_dP
 
 map <C-n> :NERDTreeToggle<CR>
 autocmd BufWritePre *.* :%s/\s\+$//e
-autocmd FileType php set omnifunc=phpcomplete#CompletePHP
+" autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 
 " Ripgrep for file indexing, sort of faster, but not really, but also why not use ripgrep for everything
 if executable('rg')
@@ -192,3 +196,7 @@ if executable('fzf')
 else
   nnoremap <leader>t :CtrlP<Space><cr>
 endif
+
+nmap <leader>gd <Plug>(coc-definition)
+nmap <leader>gr <Plug>(coc-references)
+

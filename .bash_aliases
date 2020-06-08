@@ -6,7 +6,7 @@ alias .....='cd ../../../..'
 alias desktop='cd ~/Desktop'
 alias downloads='cd ~/Downloads'
 alias documents='cd ~/Documents'
-alias codes='cd ~/Code'
+alias codes='cd ~/Codes'
 
 # Shortcuts
 alias compress='tar -zcvf'
