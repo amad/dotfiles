@@ -98,7 +98,8 @@ set list
 set listchars=tab:>-,trail:-
 set mouse=c
 set nowrap
-set number
+set number relativenumber
+set nu rnu
 set ruler
 set scrolloff=5
 set showcmd
@@ -113,8 +114,8 @@ set shell=/bin/bash
 syntax on
 
 colorscheme mustang
-highlight   cursorcolumn  term=none    cterm=none gui=none   ctermbg=232
-highlight   cursorline    term=none    gui=none   cterm=none ctermbg=232
+highlight   cursorcolumn  term=none    cterm=none gui=none   ctermbg=0
+highlight   cursorline    term=none    gui=none   cterm=none ctermbg=0
 highlight   FoldColumn                            ctermbg=8  ctermfg=14
 highlight   Folded                                ctermbg=8  ctermfg=14
 highlight   Search        term=reverse cterm=bold ctermbg=11 ctermfg=0
