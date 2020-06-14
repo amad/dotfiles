@@ -69,6 +69,8 @@ let g:airline#extensions#tabline#enabled = 1
 
 call plug#end()
 
+set directory^=$HOME/.vim/tmp//
+
 let mapleader = ' '
 let maplocalleader = ' '
 
