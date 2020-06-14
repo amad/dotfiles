@@ -19,15 +19,15 @@ Plug 'c9s/perlomni.vim'
 "  \ 'dir':  '\v\c\.(git|svn)$|cgi/t/sandbox|cover_db',
 "  \ 'file': '\v\c\.(swf|bak|png|gif|mov|ico|jpg|pdf|jrxml)$',
 "  \ }
-Plug 'Lokaltog/vim-powerline'
-  let g:Powerline_symbols = 'fancy'
-Plug 'Lokaltog/vim-easymotion'
+" Plug 'Lokaltog/vim-powerline'
+"  let g:Powerline_symbols = 'fancy'
+" Plug 'Lokaltog/vim-easymotion'
 Plug 'mileszs/ack.vim'
 Plug 'cakebaker/scss-syntax.vim'
 Plug 'airblade/vim-gitgutter'
   set signcolumn=yes
   highlight clear SignColumn
-  Plug 'vim-ruby/vim-ruby'
+" Plug 'vim-ruby/vim-ruby'
 Plug 'kana/vim-textobj-user'
 Plug 'nelstrom/vim-textobj-rubyblock'
 Plug 'bkad/CamelCaseMotion'
@@ -37,13 +37,12 @@ Plug 'Townk/vim-autoclose'
 Plug 'tpope/vim-commentary'
 Plug 'joonty/vdebug'
 Plug 'lumiliet/vim-twig'
-" Plug 'StanAngeloff/php.vim'
+Plug 'StanAngeloff/php.vim'
 " Plug 'stephpy/vim-php-cs-fixer'
-" Plug 'arnaud-lb/vim-php-namespace'
+Plug 'arnaud-lb/vim-php-namespace'
 " Plug 'nishigori/vim-php-dictionary'
 " Plug 'phpstan/vim-phpstan'
 " Plug 'Valloric/YouCompleteMe'
-" Plug 'junegunn/fzf'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'junegunn/vim-plug'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -63,8 +62,10 @@ else
 endif
 
 Plug 'leafgarland/typescript-vim'
-
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'stephpy/vim-yaml'
+Plug 'vim-airline/vim-airline'
+let g:airline#extensions#tabline#enabled = 1
 
 call plug#end()
 
@@ -154,6 +155,13 @@ imap <F1> <Esc>
 autocmd FileType gitcommit autocmd! BufEnter COMMIT_EDITMSG call setpos('.', [0, 1, 1, 0])
 autocmd FileType php noremap <C-L> :!/usr/bin/env php -l %<CR>
 autocmd FileType phtml noremap <C-L> :!/usr/bin/env php -l %<CR>
+
+function! IPhpInsertUse()
+    call PhpInsertUse()
+    call feedkeys('a',  'n')
+endfunction
+autocmd FileType php inoremap <Leader>u <Esc>:call IPhpInsertUse()<CR>
+autocmd FileType php noremap <Leader>u :call PhpInsertUse()<CR>
 
 map <silent> w <Plug>CamelCaseMotion_w
 map <silent> b <Plug>CamelCaseMotion_b
