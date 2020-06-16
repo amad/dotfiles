@@ -67,6 +67,9 @@ Plug 'stephpy/vim-yaml'
 Plug 'vim-airline/vim-airline'
 let g:airline#extensions#tabline#enabled = 1
 
+Plug 'terryma/vim-multiple-cursors'
+Plug 'terryma/vim-expand-region'
+
 call plug#end()
 
 set directory^=$HOME/.vim/tmp//
@@ -187,7 +190,7 @@ vnoremap <leader>d "_d
 " without yanking it
 vnoremap <leader>p "_dP
 
-map <C-n> :NERDTreeToggle<CR>
+ map <C-o> :NERDTreeToggle<CR>
 autocmd BufWritePre *.* :%s/\s\+$//e
 " autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 
