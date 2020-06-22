@@ -66,6 +66,7 @@ Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'stephpy/vim-yaml'
 Plug 'vim-airline/vim-airline'
 let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#buffer_nr_show= 1
 
 Plug 'terryma/vim-multiple-cursors'
 Plug 'terryma/vim-expand-region'
