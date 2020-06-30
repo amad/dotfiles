@@ -118,6 +118,8 @@ set tags=tags;/
 set virtualedit=block
 set wrap
 set shell=/bin/bash
+set spelllang=en_us
+set spell
 syntax on
 
 colorscheme mustang
