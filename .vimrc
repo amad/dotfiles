@@ -119,7 +119,7 @@ set virtualedit=block
 set wrap
 set shell=/bin/bash
 set spelllang=en_us
-set spell
+set nospell
 syntax on
 
 colorscheme mustang
