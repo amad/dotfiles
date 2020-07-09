@@ -29,6 +29,7 @@ Install:
 junegunn/fzf fuzzy finder
 facebook/PathPicker
 defaults write com.sublimetext.3 ApplePressAndHoldEnabled -bool false
+ripgrep
 
 fisher:
 fisher add fishpkg/fish-prompt-metro

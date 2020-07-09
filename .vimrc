@@ -120,6 +120,9 @@ set wrap
 set shell=/bin/bash
 set spelllang=en_us
 set nospell
+set updatetime=750
+set nobackup
+set nowritebackup
 syntax on
 
 colorscheme mustang
@@ -215,8 +218,17 @@ else
   nnoremap <leader>t :CtrlP<Space><cr>
 endif
 
+" Use <c-space> to trigger completion.
+inoremap <silent><expr> <c-space> coc#refresh()
+
 nmap <leader>gd <Plug>(coc-definition)
 nmap <leader>gr <Plug>(coc-references)
+
+nmap <leader>rn <Plug>(coc-rename)
+nmap <leader>prw :CocSearch <C-R>=expand("<cword>")<CR><CR>
+
+xmap <leader>f <Plug>(coc-format-selected)
+nmap <leader>f <Plug>(coc-format-selected)
 
 " copy current file name (relative/absolute) to system clipboard
 if has("mac") || has("gui_macvim") || has("gui_mac")
