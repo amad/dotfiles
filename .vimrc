@@ -84,9 +84,7 @@ set shiftwidth=2
 autocmd Filetype php setlocal tabstop=4
 autocmd Filetype php setlocal softtabstop=4
 autocmd Filetype php setlocal shiftwidth=4
-autocmd Filetype go setlocal tabstop=4
-autocmd Filetype go setlocal softtabstop=4
-autocmd Filetype go setlocal shiftwidth=4
+autocmd Filetype go setlocal autoindent noexpandtab tabstop=4 shiftwidth=4 softtabstop=4
 set expandtab
 set autoindent
 set backspace=indent,eol,start
@@ -101,8 +99,9 @@ set hlsearch
 set ignorecase
 set incsearch
 set laststatus=2
-set list
-set listchars=tab:>-,trail:-
+"set list
+"set listchars=tab:>-,trail:-
+"set listchars=eol:↓,tab:\ \ ┊,trail:●,extends:…,precedes:…,space:·
 set mouse=c
 set nowrap
 set number relativenumber
@@ -221,8 +220,14 @@ endif
 " Use <c-space> to trigger completion.
 inoremap <silent><expr> <c-space> coc#refresh()
 
+" Use `[g` and `]g` to navigate diagnostics
+" Use `:CocDiagnostics` to get all diagnostics of current buffer in location list.
+nmap <silent> [g <Plug>(coc-diagnostic-prev)
+nmap <silent> ]g <Plug>(coc-diagnostic-next)
+
 nmap <leader>gd <Plug>(coc-definition)
 nmap <leader>gr <Plug>(coc-references)
+nmap <leader>gy <Plug>(coc-type-definition)
 
 nmap <leader>rn <Plug>(coc-rename)
 nmap <leader>prw :CocSearch <C-R>=expand("<cword>")<CR><CR>
