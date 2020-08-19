@@ -68,7 +68,8 @@ Plug 'vim-airline/vim-airline'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_nr_show= 1
 
-Plug 'terryma/vim-multiple-cursors'
+"Plug 'terryma/vim-multiple-cursors'
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'terryma/vim-expand-region'
 
 call plug#end()
@@ -165,6 +166,7 @@ imap <F1> <Esc>
 autocmd FileType gitcommit autocmd! BufEnter COMMIT_EDITMSG call setpos('.', [0, 1, 1, 0])
 autocmd FileType php noremap <C-L> :!/usr/bin/env php -l %<CR>
 autocmd FileType phtml noremap <C-L> :!/usr/bin/env php -l %<CR>
+autocmd BufWritePre *.go :call CocAction('runCommand', 'editor.action.organizeImport')
 
 function! IPhpInsertUse()
     call PhpInsertUse()
