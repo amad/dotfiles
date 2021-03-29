@@ -1,6 +1,5 @@
 source ~/.bash_aliases
 alias `~`='cd ~'
-set -gx fish_greeting ''
 set -gx PATH $PATH $HOME/bin
 set -gx PATH $PATH $HOME/.npm-global/bin
 set -gx PATH $PATH $HOME/.composer/vendor/bin
@@ -23,10 +22,6 @@ set -gx JAVA_HOME /Library/Java/JavaVirtualMachines/jdk-11.0.2.jdk/Contents/Home
 set -x PATH $HOME/.fastlane/bin $PATH
 
 set -gx PYTHONPATH /Library/Python/2.7/site-packages
-
-if [ "$TERM_PROGRAM" = "Apple_Terminal" ]
-  fortune -s -n 100 -e computers | cowsay -f default | lolcat
-end
 
 touch /Users/ahmadsamiei/.hushlogin
 set -g fish_user_paths "/usr/local/opt/node@10/bin" $fish_user_paths
