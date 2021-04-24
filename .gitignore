@@ -11,7 +11,6 @@ sftp-config.json
 .vim/swaps
 .config/fish/fish_history
 fish/fish_history
-.DS_Store
 .config/sublime-text-3/Packages/User/Package Control.cache/
 .config/sublime-text-3/Packages/User/Package Control.last-run
 .config/sublime-text-3/Packages/User/Package Control.merged-ca-bundle
@@ -22,3 +21,13 @@ fish/fish_history
 tags
 .npmrc
 .swp
+.netrwhist
+npm-debug.log
+plug.vim.old
+config/nvim/spell
+config/nvim/shada
+config/nvim/plugged
+config/nvim/autoload/plug.vim
+vim/vim.symlink/spell/
+vim/vim.symlink/plugged/
+Brewfile.lock.json

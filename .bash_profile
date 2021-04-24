@@ -1,6 +1,6 @@
 
 export CLICOLOR_FORCE=1
-export PATH="$PATH:$HOME/.composer/vendor/bin:$HOME/.npm-global/bin:$HOME/bin:$HOME/.config/yarn/global/node_modules/.bin"
+export PATH="$PATH:$HOME/bin:$HOME/.composer/vendor/bin:$HOME/.npm-global/bin:$HOME/bin:$HOME/.config/yarn/global/node_modules/.bin"
 export XDEBUG_CONFIG="idekey=CODE"
 export GPG_TTY=$(tty)
 

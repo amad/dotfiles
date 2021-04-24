@@ -8,5 +8,3 @@
 * [x] bash
 * [x] fish
 * [x] sublime
-* [x] atom
-* [ ] build script
