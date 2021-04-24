@@ -171,10 +171,11 @@ call plug#begin('~/.config/nvim/plugged')
 
 " General Mappings {{{
     " set a map leader for more key combos
-    let mapleader = ','
+    nnoremap <SPACE> <Nop>
+    let mapleader = ' '
 
     " remap esc
-    inoremap jk <esc>
+    inoremap jj <esc>
 
     " shortcut to save
     nmap <leader>, :w<cr>
@@ -188,7 +189,7 @@ call plug#begin('~/.config/nvim/plugged')
     map <leader>eg :e! ~/.gitconfig<cr>
 
     " clear highlighted search
-    noremap <space> :set hlsearch! hlsearch?<cr>
+    noremap <,> :set hlsearch! hlsearch?<cr>
 
     " activate spell-checking alternatives
     nmap ;s :set invspell spelllang=en<cr>
@@ -197,7 +198,7 @@ call plug#begin('~/.config/nvim/plugged')
     nmap <leader>md :%!markdown --html4tags <cr>
 
     " remove extra whitespace
-    nmap <leader><space> :%s/\s\+$<cr>
+    nmap <leader><space><space><space> :%s/\s\+$<cr>
     nmap <leader><space><space> :%s/\n\{2,}/\r\r/g<cr>
 
     inoremap <expr> <C-j> pumvisible() ? "\<C-N>" : "\<C-j>"
@@ -667,3 +668,4 @@ call plug#end()
 " }}}
 
 " vim:set foldmethod=marker foldlevel=0
+
