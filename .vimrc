@@ -86,7 +86,6 @@ autocmd Filetype php setlocal tabstop=4
 autocmd Filetype php setlocal softtabstop=4
 autocmd Filetype php setlocal shiftwidth=4
 autocmd Filetype go setlocal autoindent noexpandtab tabstop=4 shiftwidth=4 softtabstop=4
-set expandtab
 set autoindent
 set backspace=indent,eol,start
 set cindent " set smartindent
@@ -104,7 +103,6 @@ set laststatus=2
 "set listchars=tab:>-,trail:-
 "set listchars=eol:↓,tab:\ \ ┊,trail:●,extends:…,precedes:…,space:·
 set mouse=c
-set nowrap
 set number relativenumber
 set nu rnu
 set ruler

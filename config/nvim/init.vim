@@ -68,14 +68,14 @@ call plug#begin('~/.config/nvim/plugged')
     set showcmd " show incomplete commands
     set noshowmode " don't show which mode disabled for PowerLine
     set wildmode=list:longest " complete files like a shell
-    set shell=$SHELL
+    set shell=/bin/bash
     set cmdheight=1 " command bar height
     set title " set terminal title
     set showmatch " show matching braces
     set mat=2 " how many tenths of a second to blink
-    set updatetime=300
-    set signcolumn=yes
-    set shortmess+=c
+    set updatetime=300 " swap file update time
+    set signcolumn=yes " always draw sign column
+    set shortmess+=c " avoid some messsage check :h shortmess
 
     " Tab control
     set smarttab " tab respects 'tabstop', 'shiftwidth', and 'softtabstop'
