@@ -30,7 +30,7 @@ call plug#begin('~/.config/nvim/plugged')
     endif
 
     set backspace=indent,eol,start " make backspace behave in a sane manner
-    set clipboard=unnamed
+    set clipboard=unnamed " use clipboard register by default instead of '*'
 
     if has('mouse')
         set mouse=a
@@ -54,6 +54,18 @@ call plug#begin('~/.config/nvim/plugged')
 
 " Appearance {{{
     set number " show line numbers
+    " set relativenumber rnu " show relative line numbers
+    " auto toggling between line number modes
+    " :augroup numbertoggle
+    " :  autocmd!
+    " :  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+    " :  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+    " set ruler " show column number on status bar
+    " set tags=tags;/ " creating identifier and tags in tags file
+    " set virtualedit=bloc " allow virtual editing in virtual block mode
+    " set nobackup " create backup file before overwriting (see nowritebackup)
+    :augroup END
+    set scrolloff=5 " always show 5 lines above and below the cursor
     set wrap " turn on line wrapping
     set wrapmargin=8 " wrap lines when coming within n characters from side
     set linebreak " set soft wrapping
@@ -83,6 +95,9 @@ call plug#begin('~/.config/nvim/plugged')
     set softtabstop=4 " edit as if the tabs are 4 characters wide
     set shiftwidth=4 " number of spaces to use for indent and unindent
     set shiftround " round indent to a multiple of 'shiftwidth'
+    set cindent " set smartindent
+    set expandtab " convert tab to space
+    autocmd Filetype javascript setlocal autoindent noexpandtab tabstop=2 shiftwidth=2 softtabstop=2
 
     " code folding settings
     set foldmethod=syntax " fold based on indent
@@ -170,6 +185,10 @@ call plug#begin('~/.config/nvim/plugged')
 " }}}
 
 " General Mappings {{{
+    " map F1 to Escape
+    nmap <F1> <esc>
+    imap <F1> <esc>
+
     " set a map leader for more key combos
     nnoremap <SPACE> <Nop>
     let mapleader = ' '
@@ -178,7 +197,51 @@ call plug#begin('~/.config/nvim/plugged')
     inoremap jj <esc>
 
     " shortcut to save
-    nmap <leader>, :w<cr>
+    nmap <leader><leader>s :w<cr>
+
+    " reload settings
+    nmap <leader><leader>r :source ~/.config/nvim/init.vim<cr>
+
+    " shortcut to save and run command
+    nnoremap <F8> :!!<CR>
+    map - :w \| :!!<CR>
+
+    " delete without yanking
+    nnoremap <leader>d "_d
+    vnoremap <leader>d "_d
+
+    " replace currently selected text with default register
+    " without yanking it
+    vnoremap <leader>p "_d
+
+    " copy current file name (relative/absolute) to system clipboard
+    if has("mac") || has("gui_macvim") || has("gui_mac")
+        " relative path  (src/foo.txt)
+        nnoremap <leader>cf :let @*=expand("%")<CR>
+
+        " absolute path  (/something/src/foo.txt)
+        nnoremap <leader>cF :let @*=expand("%:p")<CR>
+
+        " filename       (foo.txt)
+        nnoremap <leader>ct :let @*=expand("%:t")<CR>
+
+        " directory name (/something/src)
+        nnoremap <leader>ch :let @*=expand("%:p:h")<CR>
+    endif
+    " copy current file name (relative/absolute) to system clipboard (Linux version)
+    if has("gui_gtk") || has("gui_gtk2") || has("gui_gnome") || has("unix")
+        " relative path (src/foo.txt)
+        nnoremap <leader>cf :let @+=expand("%")<CR>
+
+        " absolute path (/something/src/foo.txt)
+        nnoremap <leader>cF :let @+=expand("%:p")<CR>
+
+        " filename (foo.txt)
+        nnoremap <leader>ct :let @+=expand("%:t")<CR>
+
+        " directory name (/something/src)
+        nnoremap <leader>ch :let @+=expand("%:p:h")<CR>
+    endif
 
     " set paste toggle
     set pastetoggle=<leader>v
@@ -189,7 +252,7 @@ call plug#begin('~/.config/nvim/plugged')
     map <leader>eg :e! ~/.gitconfig<cr>
 
     " clear highlighted search
-    noremap <,> :set hlsearch! hlsearch?<cr>
+    noremap <,> :set hlsearch! hlsearch?<cr> " nnoremap <C-L> :noh<CR><C-L>
 
     " activate spell-checking alternatives
     nmap ;s :set invspell spelllang=en<cr>
@@ -198,8 +261,8 @@ call plug#begin('~/.config/nvim/plugged')
     nmap <leader>md :%!markdown --html4tags <cr>
 
     " remove extra whitespace
-    nmap <leader><space><space><space> :%s/\s\+$<cr>
-    nmap <leader><space><space> :%s/\n\{2,}/\r\r/g<cr>
+    nmap <leader>, :%s/\s\+$<cr>
+    nmap <leader>,, :%s/\n\{2,}/\r\r/g<cr>
 
     inoremap <expr> <C-j> pumvisible() ? "\<C-N>" : "\<C-j>"
     inoremap <expr> <C-k> pumvisible() ? "\<C-P>" : "\<C-k>"
@@ -243,8 +306,8 @@ call plug#begin('~/.config/nvim/plugged')
     vnoremap $\ <esc>`>o*/<esc>`<O/*<esc>
     vnoremap $< <esc>`>a><esc>`<i<<esc>
 
-    " toggle cursor line
-    nnoremap <leader>i :set cursorline!<cr>
+    " toggle cursor line (set cursorcolumn? too)
+    nnoremap <leader>i :set cursorline! cursorcolumn!<cr>
 
     " scroll the viewport faster
     nnoremap <C-e> 3<C-e>
@@ -379,7 +442,7 @@ call plug#begin('~/.config/nvim/plugged')
     nmap <leader>b :Bdelete<cr>
 
     " Writing in vim {{{{
-        Plug 'junegunn/goyo.vim'
+        Plug 'junegunn/goyo.vim' " :Goyo
 
         autocmd! User GoyoEnter nested call helpers#goyo#enter()
         autocmd! User GoyoLeave nested call helpers#goyo#leave()
@@ -391,7 +454,7 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'ryanoasis/vim-devicons'
 
     " FZF {{{
-        Plug $HOMEBREW_PREFIX . '/opt/fzf'
+        " Plug $HOMEBREW_PREFIX . '/opt/fzf'
         Plug 'junegunn/fzf.vim'
 
         if isdirectory(".git")
@@ -457,15 +520,15 @@ call plug#begin('~/.config/nvim/plugged')
     " }}}
 
     " vim-fugitive {{{
-        Plug 'tpope/vim-fugitive'
+        Plug 'tpope/vim-fugitive' " git plugin for vim
         nmap <silent> <leader>gs :Gstatus<cr>
         nmap <leader>ge :Gedit<cr>
         nmap <silent><leader>gr :Gread<cr>
         nmap <silent><leader>gb :G blame<cr>
 
         Plug 'tpope/vim-rhubarb' " hub extension for fugitive
-        Plug 'sodapopcan/vim-twiggy'
-        Plug 'rbong/vim-flog'
+        Plug 'sodapopcan/vim-twiggy' " git branching
+        Plug 'rbong/vim-flog' " branch viewer
     " }}}
 
     " UltiSnips {{{
@@ -638,7 +701,23 @@ call plug#begin('~/.config/nvim/plugged')
 
     Plug 'ekalinin/Dockerfile.vim'
     Plug 'jparise/vim-graphql'
+    Plug 'stephpy/vim-yaml'
+    Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 " }}}
+
+    " multi cursor
+    Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+    " select words with Ctrl-N (like Ctrl-d in Sublime Text/VS Code)
+    " create cursors vertically with Ctrl-Down/Ctrl-Up
+    " select one character at a time with Shift-Arrows
+    " press n/N to get next/previous occurrence
+    " press [/] to select next/previous cursor
+    " press q to skip current and get next occurrence
+    " press Q to remove current cursor/selection
+    " start insert mode with i,a,I,A
+
+    " press +/_ to expand/shrink the visual selection
+    Plug 'terryma/vim-expand-region'
 
 call plug#end()
 
