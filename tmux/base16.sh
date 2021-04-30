@@ -21,7 +21,6 @@ set -g status-left-length 32
 set -g status-right-length 150
 set -g status-interval 5
 set -g status-position top
-set -g status-utf8 on
 
 # Center the window list
 set -g status-justify centre
