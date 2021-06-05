@@ -101,7 +101,7 @@ alias wiki='hub browse -- wiki'
 alias pullrequest='hub pull-request'
 alias pull-request='hub pull-request'
 alias newfiles='git whatchanged --diff-filter=A'
-alias contributors='git shortlog -sn'
+alias contributors='git shortlog -sn --no-merges'
 
 # PHP
 alias ptree='tree -d -L 10 -I "vendor|tests|test|node_modules" --matchdirs'
