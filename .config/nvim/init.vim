@@ -456,6 +456,7 @@ call plug#begin('~/.config/nvim/plugged')
     " FZF {{{
         " Plug $HOMEBREW_PREFIX . '/opt/fzf'
         Plug 'junegunn/fzf.vim'
+        set rtp+=/usr/local/opt/fzf
 
         if isdirectory(".git")
             " if in a git project, use :GFiles
