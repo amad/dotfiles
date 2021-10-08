@@ -20,7 +20,7 @@ base0F='#8F5536' # - Deprecated, Opening/Closing Embedded Language Tags, e.g. <?
 set -g status-left-length 32
 set -g status-right-length 150
 set -g status-interval 5
-set -g status-position top
+set -g status-position bottom
 
 # Center the window list
 set -g status-justify centre

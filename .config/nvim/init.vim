@@ -91,13 +91,14 @@ call plug#begin('~/.config/nvim/plugged')
 
     " Tab control
     set smarttab " tab respects 'tabstop', 'shiftwidth', and 'softtabstop'
-    set tabstop=4 " the visible width of tabs
-    set softtabstop=4 " edit as if the tabs are 4 characters wide
-    set shiftwidth=4 " number of spaces to use for indent and unindent
+    set tabstop=2 " the visible width of tabs
+    set softtabstop=2 " edit as if the tabs are 4 characters wide
+    set shiftwidth=2 " number of spaces to use for indent and unindent
     set shiftround " round indent to a multiple of 'shiftwidth'
     set cindent " set smartindent
     set expandtab " convert tab to space
     autocmd Filetype javascript setlocal autoindent noexpandtab tabstop=2 shiftwidth=2 softtabstop=2
+    autocmd Filetype php setlocal autoindent noexpandtab tabstop=4 shiftwidth=4 softtabstop=4
 
     " code folding settings
     set foldmethod=syntax " fold based on indent
@@ -198,6 +199,7 @@ call plug#begin('~/.config/nvim/plugged')
 
     " shortcut to save
     nmap <leader><leader>s :w<cr>
+    nmap <enter> :w<cr>
 
     " reload settings
     nmap <leader><leader>r :source ~/.config/nvim/init.vim<cr>
@@ -359,7 +361,8 @@ call plug#begin('~/.config/nvim/plugged')
         " automatically resize panes on resize
         autocmd VimResized * exe 'normal! \<c-w>='
         autocmd BufWritePost .vimrc,.vimrc.local,init.vim source %
-        autocmd BufWritePost .vimrc.local source %
+        autocmd BufWritePost .vimrc.local,init.vim,.tmux.conf source %
+        autocmd BufWritePre * :%s/\s\+$//e
         " save all files on focus lost, ignoring warnings about untitled buffers
         autocmd FocusLost * silent! wa
 
@@ -556,7 +559,8 @@ call plug#begin('~/.config/nvim/plugged')
         \ 'coc-prettier',
         \ 'coc-ultisnips',
         \ 'coc-explorer',
-        \ 'coc-diagnostic'
+        \ 'coc-diagnostic',
+        \ 'coc-java',
         \ ]
 
         autocmd CursorHold * silent call CocActionAsync('highlight')
@@ -685,6 +689,11 @@ call plug#begin('~/.config/nvim/plugged')
     " }}}
 
     " markdown {{{
+        " :MarkdownPreview
+        " :MarkdownPreviewStop
+        " :MarkdownPreviewToggle
+        Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
+
         Plug 'tpope/vim-markdown', { 'for': 'markdown' }
         let g:markdown_fenced_languages = [ 'tsx=typescript.tsx' ]
 
@@ -748,4 +757,3 @@ call plug#end()
 " }}}
 
 " vim:set foldmethod=marker foldlevel=0
-
