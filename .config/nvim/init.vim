@@ -362,6 +362,8 @@ call plug#begin('~/.config/nvim/plugged')
         autocmd VimResized * exe 'normal! \<c-w>='
         autocmd BufWritePost .vimrc,.vimrc.local,init.vim source %
         autocmd BufWritePost .vimrc.local,init.vim,.tmux.conf source %
+        " autocmd FileType ruby,python autocmd BufWritePre <buffer> :%s/\($\n\s*\)\+\%$//e
+        autocmd BufWritePre <buffer> :%s/\($\n\s*\)\+\%$//e
         autocmd BufWritePre * :%s/\s\+$//e
         " save all files on focus lost, ignoring warnings about untitled buffers
         autocmd FocusLost * silent! wa
