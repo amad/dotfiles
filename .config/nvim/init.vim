@@ -563,6 +563,8 @@ call plug#begin('~/.config/nvim/plugged')
         \ 'coc-explorer',
         \ 'coc-diagnostic',
         \ 'coc-java',
+        \ 'coc-intelephense',
+        \ 'coc-psalm'
         \ ]
 
         autocmd CursorHold * silent call CocActionAsync('highlight')
