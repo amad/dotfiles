@@ -382,6 +382,7 @@ call plug#begin('~/.config/nvim/plugged')
 
     " easy commenting motions
     Plug 'tpope/vim-commentary'
+      autocmd BufNewFile,BufRead,BufEnter *.tf set filetype=terraform syntax=terraform commentstring=#\ %s
 
     " mappings which are simply short normal mode aliases for commonly used ex commands
     Plug 'tpope/vim-unimpaired'
@@ -563,6 +564,7 @@ call plug#begin('~/.config/nvim/plugged')
         \ 'coc-explorer',
         \ 'coc-diagnostic',
         \ 'coc-java',
+        \ 'coc-go',
         \ 'coc-intelephense',
         \ 'coc-psalm'
         \ ]
@@ -690,6 +692,10 @@ call plug#begin('~/.config/nvim/plugged')
         Plug 'hail2u/vim-css3-syntax', { 'for': 'css' }
         Plug 'cakebaker/scss-syntax.vim', { 'for': 'scss' }
         Plug 'stephenway/postcss.vim', { 'for': 'css' }
+    " }}}
+
+    " Terraform {{{
+        Plug 'hashivim/vim-terraform'
     " }}}
 
     " markdown {{{
