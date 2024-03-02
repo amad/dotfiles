@@ -1,7 +1,0 @@
-<snippet>
-    <content><![CDATA[
-syslog(1, '>>>>>>>>>>>>>>>>>>'.var_export(${1}, true));${2}
-]]></content>
-    <tabTrigger>slog</tabTrigger>
-    <scope>source.php</scope>
-</snippet>

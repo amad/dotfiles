@@ -1,9 +1,0 @@
-<snippet>
-    <content><![CDATA[
-ini_set('display_errors', 1);
-error_reporting(E_ALL);
-${1}
-]]></content>
-    <tabTrigger>phperror</tabTrigger>
-    <scope>source.php</scope>
-</snippet>

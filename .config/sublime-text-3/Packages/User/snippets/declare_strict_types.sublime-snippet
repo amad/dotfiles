@@ -1,7 +1,0 @@
-<snippet>
-    <content><![CDATA[
-declare(strict_types=1);
-]]></content>
-    <tabTrigger>declarestrict_types</tabTrigger>
-    <scope>source.php</scope>
-</snippet>

@@ -1,7 +1,0 @@
-<snippet>
-    <content><![CDATA[
-return \$this->${1};
-]]></content>
-    <tabTrigger>returnthis</tabTrigger>
-    <scope>source.php</scope>
-</snippet>

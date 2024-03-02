@@ -1,7 +1,0 @@
-<snippet>
-    <content><![CDATA[
-public \$${1};${2}
-]]></content>
-    <tabTrigger>public</tabTrigger>
-    <scope>source.php</scope>
-</snippet>

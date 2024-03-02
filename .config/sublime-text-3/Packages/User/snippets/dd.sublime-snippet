@@ -1,7 +1,0 @@
-<snippet>
-    <content><![CDATA[
-exit(var_dump(${1}));${2}
-]]></content>
-    <tabTrigger>dd</tabTrigger>
-    <scope>source.php</scope>
-</snippet>
