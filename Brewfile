@@ -3,9 +3,9 @@ if OS.mac?
     tap "homebrew/cask"
     tap "homebrew/cask-fonts"
 
-    brew "mas"
-    brew "noti"
-    brew "trash"
+    brew "mas" # brew app store integration
+    brew "noti" # notify when process exits
+    brew "trash" # move files to trash
 
     # Applications
     cask "iterm2"
@@ -20,9 +20,9 @@ if OS.mac?
     # cask "hazel"
     # cask "istat-menus"
     # cask "textbar"
-    # cask "rocket"
+    # cask "rocket" # slack style emoji autocomplete
     # cask "vmware-fusion"
-    # cask "choosy"
+    # cask "choosy" # open link in any browser
 
     # Browsers
     cask "firefox"
@@ -41,20 +41,20 @@ if OS.mac?
 
     # macOS App Store
     mas "Xcode", id: 497799835
-    mas "ColorSlurp", id: 1287239339
+    # mas "ColorSlurp", id: 1287239339
     mas "Telegram Lite", id: 946399090
     mas "Xcode", id: 497799835
     mas "Keynote", id: 409183694
-    mas "HP Smart", id: 1474276998
+    # mas "HP Smart", id: 1474276998
     mas "iMovie", id: 408981434
     mas "Flycut", id: 442160987
-    mas "GIPHY CAPTURE", id: 668208984
+    # mas "GIPHY CAPTURE", id: 668208984
     mas "Slack", id: 803453959
     mas "WhatsApp", id: 1147396723
-    mas "Pages", id: 409201541
-    mas "Flow", id: 1423210932
-    mas "Amphetamine", id: 937984704
-    mas "Numbers", id: 409203825
+    # mas "Pages", id: 409201541
+    # mas "Flow", id: 1423210932
+    # mas "Amphetamine", id: 937984704
+    # mas "Numbers", id: 409203825
 elsif OS.linux?
     brew "xclip"
 end
@@ -66,19 +66,19 @@ tap "homebrew/core"
 brew "ack"
 brew "awscli"
 brew "bash"
-brew "bat"
-brew "cloc"
-brew "composer"
+brew "bat" # cat but with syntax highlighting
+brew "cloc" # Statistics utility to count lines of code
+# brew "composer"
 brew "cowsay"
 brew "ctags"
 brew "curl"
 brew "diff-so-fancy"
-brew "entr"
+brew "entr" # arbitrary commands when files change
 # brew "etcd"
-brew "exa"
-brew "fd"
+# brew "exa" # modern ls alternative
+brew "fd" # modern find alternative
 brew "fish"
-brew "fontconfig"
+# brew "fontconfig"
 brew "fortune"
 brew "fzf"
 brew "gettext"
@@ -86,7 +86,6 @@ brew "gh"
 brew "git-quick-stats"
 brew "git"
 # brew "glib"
-brew "gnupg"
 brew "gnupg"
 brew "go"
 brew "gradle"

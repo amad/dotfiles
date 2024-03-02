@@ -1,20 +1,11 @@
 if status is-interactive
-    source ~/.bash_aliases
     alias `~`='cd ~'
-    touch /Users/ahmadsamiei/.hushlogin
+    touch /Users/ahmad/.hushlogin
 end
 
-set -gx PATH $PATH $HOME/bin
-set -g fish_user_paths "/Users/ahmadsamiei/Library/Python/3.9/bin" $fish_user_paths
+#fish_add_path /usr/local/bin/
+
 set -gx GPG_TTY (tty)
-
-set -gx DOTFILES /Users/ahmadsamiei/projects/dotfiles
-
-#if [ "$TERM_PROGRAM" = "Apple_Terminal" ]
-#  fortune -s -n 100 -e computers | cowsay -f default | lolcat
-#end
-
-set -gx VAULT_ADDR https://vault.pusherplatform.io:8200
 
 abbr -a 'addremote' 'git remote add'
 abbr -a 'allmerged' 'git branch --merged -r | grep -v "\*"'
@@ -134,5 +125,3 @@ abbr -a 'k' 'kubectl'
 abbr -a 'pods' 'kubectl get pods'
 abbr -a 'nest' '~/projects/nest/'
 abbr -a 'pusher' '~/projects/pusher/'
-
-# source /opt/homebrew/opt/asdf/libexec/asdf.fish
