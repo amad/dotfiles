@@ -119,10 +119,10 @@ local plugins = {
   },
 
   {
-    "simrat39/symbols-outline.nvim", -- :SymbolsOutline
+    "hedyhli/outline.nvim", -- :Outline
     lazy = false,
     config = function()
-      require("symbols-outline").setup()
+      require("outline").setup()
     end,
   }
 
