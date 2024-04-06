@@ -37,3 +37,9 @@ fisher add fishpkg/fish-humanize-duration
 fisher add franciscolourenco/done
 fisher add laughedelic/pisces
 fisher add jethrokuan/fzf
+
+
+set --universal hydro_color_git cyan
+set branch (
+    fish_git_prompt ' ' | tr -d '[:space:]'
+)
