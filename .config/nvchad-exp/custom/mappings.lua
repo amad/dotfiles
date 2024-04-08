@@ -71,4 +71,20 @@ M.gopher = {
   }
 }
 
+M.vm = {
+    plugin = true,
+    v = {
+        ["<C-j>"] = {
+            "<Plug>(VM-Find-Subword-Under)",
+            "VM Find Subword Under"
+        },
+    },
+    n = {
+        ["<C-j>"] = {
+            "<Plug>(VM-Find-Under)",
+            "VM Find Under"
+        },
+    }
+}
+
 return M

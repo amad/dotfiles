@@ -6,6 +6,13 @@ local plugins = {
   -- Override plugin definition options
 
   {
+    "kylechui/nvim-surround",
+    lazy = false,
+    config = function()
+      require("nvim-surround").setup()
+    end,
+  },
+  {
     "neovim/nvim-lspconfig",
     config = function()
       require "plugins.configs.lspconfig"
@@ -124,21 +131,30 @@ local plugins = {
     config = function()
       require("outline").setup()
     end,
-  }
-
-  -- To make a plugin not be loaded
-  -- {
-  --   "NvChad/nvim-colorizer.lua",
-  --   enabled = false
-  -- },
-
-  -- All NvChad plugins are lazy-loaded by default
-  -- For a plugin to be loaded, you will need to set either `ft`, `cmd`, `keys`, `event`, or set `lazy = false`
-  -- If you want a plugin to load on startup, add `lazy = false` to a plugin spec, for example
-  -- {
-  --   "mg979/vim-visual-multi",
-  --   lazy = false,
-  -- }
+  },
+  {
+    "nvim-telescope/telescope-fzf-native.nvim",
+    build = "make",
+    lazy = false,
+  },
+  {
+    "debugloop/telescope-undo.nvim",
+    build = "make",
+    lazy = false,
+  },
+  {
+    "nvim-telescope/telescope.nvim",
+    opts = {
+      extensions_list = { "themes", "terms", "fzf", "undo" },
+    },
+  },
+  {
+    "mg979/vim-visual-multi",
+    lazy = false,
+    init = function()
+      require("core.utils").load_mappings("vm")
+    end
+  },
 }
 
 return plugins
